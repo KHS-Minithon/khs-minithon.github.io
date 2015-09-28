@@ -4,6 +4,6 @@
 
 Website for Kennett High School's Four Diamonds club 
 
-http://ernie3.github.io/khs-minithon/
+http://khs-minithon.github.io/website/  
 
 
