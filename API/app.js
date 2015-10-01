@@ -47,41 +47,6 @@ var allowCrossDomain = function(req, res, next) {
 
 app.use(allowCrossDomain);
 
-app.get('/data', function(req, res, next) {
-
-  var url = "http://fourdiamonds.donordrive.com/index.cfm?fuseaction=donorDrive.event&eventID=1179";
-
-  request(url, function(error, response, html){
-
-    
-    if(!error) {
-
-      // Send Data From Website Above
-
-      var $ = cheerio.load(html);
-
-      var money_raised, participants;
-
-      money_raised = $('#donationsTotal h5').eq(0).text().replace(/[^0-9.]/g, '');
-      participants = $('#donationsTotal h5').eq(1).text().replace(/[^0-9.]/g, '');
-
-      var result = { money_raised : money_raised, participants : participants};
-
-      res.json(result);
-
-    } else {
-
-      // Send JSON File with last money raised data
-
-
-
-
-    }
-
-  });
- 
-});
-
 app.post('/email', function(req, res, next) {
 
   var mailOptions = {
