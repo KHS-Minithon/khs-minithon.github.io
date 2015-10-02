@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
 	// Get Money Raised Data and Adjust Progress Bar
-	$.getJSON("/API/result.json", function(data){
+	$.getJSON("API/result.json", function(data){
 
 		var money_raised = data.money_raised;
 		var goal = 5000;
