@@ -124,7 +124,7 @@ casper.test.begin('Important Links', function suite(test) {
         test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#contact-section', 'Correct Navegation-Contact Link');
 
         //Social Media Buttons
-        test.assertElementCount('.social-list li', 3, '3 Social Media Buttons Found');
+        test.assertElementCount('.social-list li', 4, '4 Social Media Buttons Found');
 
             //Facebook
             test.assertEquals(this.getElementAttribute('.social-list li:nth-child(1) a', 'href'), 'https://www.facebook.com/FourDiamondsFund', 'Correct Facebook Link');
@@ -134,6 +134,9 @@ casper.test.begin('Important Links', function suite(test) {
 
             //Instagram
             test.assertEquals(this.getElementAttribute('.social-list li:nth-child(3) a', 'href'), 'https://instagram.com/khsminithon/', 'Correct Instagram Link');
+
+            //Google Group
+            test.assertEquals(this.getElementAttribute('.social-list li:nth-child(4) a', 'href'), 'https://groups.google.com/forum/#!forum/khsminithon/join', 'Correct Google Group Link');
 
         //Sign Up Button 
         test.assertExists('#sign-up', 'Sign Up Button Found');
