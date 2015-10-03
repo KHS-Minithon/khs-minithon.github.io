@@ -2,7 +2,7 @@
 
 casper.test.begin('Important Information', function suite(test) {
 
-    casper.start("http://localhost:8000/", function() {
+    casper.start("http://khs-minithon.github.io/website/", function() {
 
         test.assertHttpStatus(200, 'Connected to main page');
         test.assertUrlMatch('/', 'URL is root');
@@ -98,7 +98,7 @@ casper.test.begin('Important Information', function suite(test) {
 
 casper.test.begin('Important Links', function suite(test) {
 
-    casper.start("http://localhost:8000/", function() {
+    casper.start("http://khs-minithon.github.io/website/", function() {
 
 
         //Navegation Bar
