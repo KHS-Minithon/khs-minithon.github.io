@@ -2,7 +2,7 @@
 
 casper.test.begin('Important Information', function suite(test) {
 
-    casper.start("http://khs-minithon.github.io/website/", function() {
+    casper.start("http://localhost:9001/", function() {
 
         test.assertHttpStatus(200, 'Connected to main page');
         test.assertUrlMatch('/', 'URL is root');
@@ -58,7 +58,7 @@ casper.test.begin('Important Information', function suite(test) {
 
             //Research
             test.assertEquals(this.fetchText(".services:nth-child(4) h4"), "Research", "Research - Correct Title ");
-            test.assertEquals(this.fetchText(".services:nth-child(4) p"), "Through the Four Diamonds, Penn State Hershey Children's Hospital is seeking improved treatments and cures to benefit those around the world.", "Research - Correct Text ");
+            test.assertEquals(this.fetchText(".services:nth-child(4) p"), "Through Four Diamonds, Penn State Hershey Children's Hospital is seeking improved treatments and cures to benefit those around the world.", "Research - Correct Text ");
             test.assertEquals(this.getElementAttribute('.services:nth-child(4) a', 'href'), 'https://www.youtube.com/watch?v=C7SPFR2T3tg', 'Research Correct Link');
 
         //Contact Info
@@ -75,30 +75,10 @@ casper.test.begin('Important Information', function suite(test) {
 });
 
 
-// casper.test.begin('Important UI', function suite(test) {
-
-//     casper.start("http://localhost:8000/", function() {
-
-//         //Money Raised
-//         test.assertExists('.progress', 'Progress Bar Found');
-
-
-//         //Scroll To Top
-//         test.assertExists('.scrolltotop', 'Scroll To Top Button Found');
-
-//     });
-
-//     casper.run(function() {
-//         test.done();
-//     });
-
-// });
-
-
 
 casper.test.begin('Important Links', function suite(test) {
 
-    casper.start("http://khs-minithon.github.io/website/", function() {
+    casper.start("http://localhost:9001/", function() {
 
 
         //Navegation Bar
