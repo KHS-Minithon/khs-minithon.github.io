@@ -70,6 +70,33 @@ casper.test.begin('Important Information', function suite(test) {
         test.assertEquals(this.fetchText('.contact-info ul li:nth-child(1)'), "  100E South Street,        Kennett Square,        Pennsylvania, USA, 19348", "Correct Address");
         test.assertEquals(this.fetchText('.contact-info ul li:nth-child(2)'), "  1-610-444-6617", "Correct Phone Number");
 
+        // Four Diamonds Links
+        test.assertElementCount('.imp-links li', 6, '6 Four Diamonds Links Found');
+
+            // About
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(1)'), 'About', 'About - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(1) a', 'href'), 'http://www.fourdiamonds.org/about-us/#sidr-main', 'About - Correct Link');
+
+            // History
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(2)'), 'History', 'History - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(2) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usour-history', 'History - Correct Link');
+
+            // Financials
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(3)'), 'Financials', 'Financials - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(3) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usfinancials', 'Financials - Correct Link');
+
+            // Penn State
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(4)'), 'Penn State', 'Penn State - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(4) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usrelationship-to-penn-state', 'Penn State - Correct Link');
+
+            // Staff
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(5)'), 'Staff', 'Staff - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(5) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usstaff', 'Staff - Correct Link');
+
+            // Families
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(6)'), 'Families', 'Families - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(6) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usmeet-our-families', 'Families - Correct Link');
+
     });
 
     casper.run(function() {
