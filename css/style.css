@@ -1142,3 +1142,42 @@ p.subtitle {
 	transform: rotate(-45deg);
 }
 /* ===== End buttons ===== */
+
+/*  */
+
+p.overseer:before {
+	content: "Committee";
+	font-size: 15px;
+}
+
+p.finances:before {
+	content: "Finances";
+	font-size: 15px;
+}
+
+p.community-outreach:before {
+	content: "Community Outreach";
+	font-size: 10px;
+}
+
+p.hospitality:before {
+	content: "Hospitality";
+	font-size: 15px;
+}
+
+p.entertainment:before {
+	content: "Entertainment";
+	font-size: 14px;
+}
+
+p.special-events:before {
+	content: "Special Events";
+	font-size: 14px;
+}
+
+p.social-media-tech:before {
+	content: "Social Meda/Tech";
+	font-size: 12px;
+}
+
+/* =====  ===== */
