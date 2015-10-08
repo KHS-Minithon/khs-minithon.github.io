@@ -48,7 +48,7 @@ casper.test.begin('Important Information', function suite(test) {
             // Mini-THONs
             test.assertEquals(this.fetchText(".services:nth-child(1) h4"), "Mini-THONs", "Mini-THONS - Correct Title ");
             test.assertEquals(this.fetchText(".services:nth-child(1) p"), "Mini-THONs are multi-hour, interactive, fun-filled events that are completely student-led. They can also be 3 month projects or year-long activities where students raise awareness and funds for Four Diamonds.", "Mini-THONS - Correct Text ");
-            test.assertEquals(this.getElementAttribute('.services:nth-child(1) a', 'href'), 'http://fourdiamonds.donordrive.com/index.cfm?fuseaction=cms.page&id=1007', 'Mini-THONS Correct Link');
+            test.assertEquals(this.getElementAttribute('.services:nth-child(1) a', 'href'), 'http://fourdiamonds.donordrive.com/index.cfm?fuseaction=cms.page&id=1007', 'Mini-THON Correct Link');
 
             // Donations
             test.assertEquals(this.fetchText(".services:nth-child(2) h4"), "Donations", "Donations - Correct Title ");
@@ -110,6 +110,16 @@ casper.test.begin('Important Links', function suite(test) {
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(6) a'), "Contact", "Correct Navigation-Contact Text");
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#contact-section', 'Correct Navigation-Contact Link');
 
+        // Sign Up Button
+        test.assertExists('#sign-up', 'Sign Up Button Found');
+        test.assertEquals(this.fetchText('#sign-up strong'), "Sign up", "Correct Sign Up Button Text");
+        test.assertEquals(this.getElementAttribute('#sign-up', 'href'), 'http://fourdiamonds.donordrive.com/event/khs16', 'Correct Sign Up Link');
+
+        // Donate Button
+        test.assertExists('#donate', 'Donate Button Found');
+        test.assertEquals(this.fetchText('#donate'), "Donate", "Correct Donate Button Text");
+        test.assertEquals(this.getElementAttribute('#donate', 'href'), 'https://fourdiamonds.donordrive.com/index.cfm?fuseaction=donate.event&eventID=1179', 'Correct Donate Link');
+
         // Social Media Buttons
         test.assertElementCount('.social-list li', 4, '4 Social Media Buttons Found');
 
@@ -125,15 +135,6 @@ casper.test.begin('Important Links', function suite(test) {
             // Google Group
             test.assertEquals(this.getElementAttribute('.social-list li:nth-child(4) a', 'href'), 'https://groups.google.com/forum/#!forum/khsminithon/join', 'Correct Google Group Link');
 
-        // Sign Up Button
-        test.assertExists('#sign-up', 'Sign Up Button Found');
-        test.assertEquals(this.fetchText('#sign-up strong'), "Sign up", "Correct Sign Up Button Text");
-        test.assertEquals(this.getElementAttribute('#sign-up', 'href'), 'http://fourdiamonds.donordrive.com/index.cfm?fuseaction=donorDrive.event&eventID=1179', 'Correct Sign Up Link');
-
-        // Donate Button
-        test.assertExists('#donate', 'Donate Button Found');
-        test.assertEquals(this.fetchText('#donate'), "Donate", "Correct Donate Button Text");
-        test.assertEquals(this.getElementAttribute('#donate', 'href'), 'https://fourdiamonds.donordrive.com/index.cfm?fuseaction=donate.event&eventID=1179', 'Correct Donate Link');
     });
 
     casper.run(function() {
