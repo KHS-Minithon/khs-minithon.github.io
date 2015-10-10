@@ -1259,44 +1259,41 @@ p.subtitle {
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-/* ===== End buttons ===== */
 
-/*  */
+/* Members Section */
 
-p.overseer:before {
-	content: "Committee";
-	font-size: 15px;
+p.overseers {
+	font-size: 18px;
 }
 
-p.finances:before {
-	content: "Finances";
-	font-size: 15px;
+p.finances {
+	font-size: 18px;
 }
 
-p.community-outreach:before {
-	content: "Community Outreach";
-	font-size: 10px;
-}
-
-p.hospitality:before {
-	content: "Hospitality";
-	font-size: 15px;
-}
-
-p.entertainment:before {
-	content: "Entertainment";
+p.community-outreach {
 	font-size: 14px;
 }
 
-p.special-events:before {
-	content: "Special Events";
-	font-size: 14px;
+p.operations {
+	font-size: 18px;
 }
 
-p.social-media-tech:before {
-	content: "Social Meda/Tech";
-	font-size: 12px;
+p.hospitality {
+	font-size: 18px;
 }
 
-/* =====  ===== */
+p.entertainment {
+	font-size: 18px;
+}
 
+p.special-events {
+	font-size: 18px;
+}
+
+p.social-media {
+	font-size: 18px;
+}
+
+p.technology {
+	font-size: 18px;
+}
