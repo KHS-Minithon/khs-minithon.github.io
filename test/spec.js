@@ -111,7 +111,7 @@ casper.test.begin('Important Links', function suite(test) {
 
         // Navigation Bar
         test.assertExists('.navbar-nav', 'Navigation Bar Found');
-        test.assertElementCount('.navbar-nav li', 6, '6 Sections in Navigation Bar Found');
+        test.assertElementCount('.navbar-nav li', 7, '7 Sections in Navigation Bar Found');
 
             // Home
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(1) a'), "Home", "Correct Navigation-Home Text");
@@ -129,13 +129,17 @@ casper.test.begin('Important Links', function suite(test) {
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(4) a'), "Works", "Correct Navigation-Works Text");
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(4) a', 'href'), '#portfolio-section', 'Correct Navigation-Works Link');
 
+            // Sign Up
+            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(5) a'), "Sign Up", "Correct Navigation-SignUp Text");
+            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(5) a', 'href'), '#signup-section', 'Correct Navigation-Sign Up Link');
+
             // Team
-            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(5) a'), "Team", "Correct Navigation-Team Text");
-            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(5) a', 'href'), '#team-section', 'Correct Navigation-Team Link');
+            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(6) a'), "Team", "Correct Navigation-Team Text");
+            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#team-section', 'Correct Navigation-Team Link');
 
             // Contact
-            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(6) a'), "Contact", "Correct Navigation-Contact Text");
-            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#contact-section', 'Correct Navigation-Contact Link');
+            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(7) a'), "Contact", "Correct Navigation-Contact Text");
+            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#contact-section', 'Correct Navigation-Contact Link');
 
         // Sign Up Button
         test.assertExists('#sign-up', 'Sign Up Button Found');

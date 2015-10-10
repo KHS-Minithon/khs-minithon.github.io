@@ -71,8 +71,10 @@ $(document).ready(function(){
 
 	});
 
-    // Image Gallery Initiation and Settings
+    // Image Gallery Initiation and Settings 
+    // **VIDEO POP-UP ONLY WORK IN A SERVER**
 	$('.swipebox').swipebox();
 	$('.swipebox-video').swipebox();
+
 
 });

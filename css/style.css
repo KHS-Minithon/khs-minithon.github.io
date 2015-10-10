@@ -729,6 +729,124 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 /* ===== End partners ===== */
 
+/* ===== Begin signup ===== */
+#signup-section {
+	padding: 80px 0;
+}
+
+#mobile-signup {
+	display: none;
+}
+
+.bwizard-steps {
+	display: inline-block;
+	margin: 0; padding: 0;
+	background: #fff }
+	.bwizard-steps .active {
+		color: #fff;
+		background: #007ACC }
+	.bwizard-steps .active:after {
+		border-left-color: #007ACC }
+	.bwizard-steps .active a {
+		color: #fff;
+		cursor: default }
+	.bwizard-steps .label {
+		position: relative;
+		top: -1px;
+		margin: 0 5px 0 0; padding: 1px 5px 2px }
+	.bwizard-steps .active .label {
+		background-color: #333;}
+	.bwizard-steps li {
+		display: inline-block; position: relative;
+		margin-right: 5px;
+		padding: 12px 17px 10px 30px;
+		*display: inline;
+		*padding-left: 17px;
+		background: #efefef;
+		line-height: 18px;
+		list-style: none;
+		zoom: 1; }
+	.bwizard-steps li:first-child {
+		padding-left: 12px;
+		-moz-border-radius: 4px 0 0 4px;
+		-webkit-border-radius: 4px 0 0 4px;
+		border-radius: 4px 0 0 4px; }
+	.bwizard-steps li:first-child:before {
+		border: none }
+	.bwizard-steps li:last-child {
+		margin-right: 0;
+		-moz-border-radius: 0 4px 4px 0;
+		-webkit-border-radius: 0 4px 4px 0;
+		border-radius: 0 4px 4px 0; }
+	.bwizard-steps li:last-child:after {
+		border: none }
+	.bwizard-steps li:before {
+		position: absolute;
+		left: 0; top: 0;
+		height: 0; width: 0;
+		border-bottom: 20px inset transparent;
+		border-left: 20px solid #fff;
+		border-top: 20px inset transparent;
+		content: "" }
+	.bwizard-steps li:after {
+		position: absolute;
+		right: -20px; top: 0;
+		height: 0; width: 0;
+		border-bottom: 20px inset transparent;
+		border-left: 20px solid #efefef;
+		border-top: 20px inset transparent;
+		content: "";
+		z-index: 2; }
+	.bwizard-steps a {
+		color: #333 }
+	.bwizard-steps a:hover {
+		text-decoration: none }
+.bwizard-steps.clickable li:not(.active) {
+	cursor: pointer }
+.bwizard-steps.clickable li:hover:not(.active) {
+	background: #ccc }
+.bwizard-steps.clickable li:hover:not(.active):after {
+	border-left-color: #ccc }
+.bwizard-steps.clickable li:hover:not(.active) a {
+	color: #08c }
+@media (max-width: 480px) { 
+	/* badges only on small screens */
+	.bwizard-steps li:after,
+	.bwizard-steps li:before {
+		border: none }
+	.bwizard-steps li,
+	.bwizard-steps li.active,
+	.bwizard-steps li:first-child,
+	.bwizard-steps li:last-child {
+		margin-right: 0;
+		padding: 0;
+		background-color: transparent }
+}
+
+
+/*Form Wizard*/
+.bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #000; font-size: 14px; margin-top: 25px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #ECECEC; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%  !important;} 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #3333FF; border-radius: 50px; position: absolute; top: 8px; left: 8px; } 
+.bs-wizard > .bs-wizard-step > .progress-step {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .progress-step > .progress-bar {width:0px; box-shadow: none; margin-top: 5px; background: #3333FF;}
+.bs-wizard > .bs-wizard-step.complete > .progress-step > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress-step > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress-step > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress-step > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #f5f5f5;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress-step {left: 50%; width: 50%;}
+.bs-wizard > .bs-wizard-step:last-child  > .progress-step {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+/*END Form Wizard*/
+
+/* ===== End partners ===== */
+
 
 /* ===== Begin panels ===== */
 .panel, .panel-heading, .panel-footer  {
@@ -1181,3 +1299,4 @@ p.social-media-tech:before {
 }
 
 /* =====  ===== */
+

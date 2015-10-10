@@ -261,6 +261,14 @@
 		display: none !important;
 	}
 
+	#mobile-signup {
+    	display: flex;
+    }
+
+    #rootwizard {
+    	display: none;
+    }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -269,6 +277,14 @@
 	/* Team */
 	 #team-section .col-md-2 {
         width: 100%;
+    }
+
+    #mobile-signup {
+    	display: flex;
+    }
+
+    #rootwizard {
+    	display: none;
     }
 
 }
