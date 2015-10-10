@@ -9,9 +9,9 @@ $(document).ready(function(){
 		var goal = 5000;
 		var current_money = (money_raised/goal) * 100;
 
-		$(".progress-bar").css({"width": current_money + "%" });
-		$(".progress-bar").attr("aria-valuenow", current_money);
-		$(".progress-bar").text(current_money + "%");
+		$("#money_raised_bar").css({"width": current_money + "%" });
+		$("#money_raised_bar").attr("aria-valuenow", current_money);
+		$("#money_raised_bar").text(current_money + "%");
 
 	});
 
