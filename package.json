@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ernie3/khs-minithon.git"
+    "url": "git+https://github.com/KHS-Minithon/website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ernie3/khs-minithon/issues"
+    "url": "https://github.com/KHS-Minithon/website/issues"
   },
-  "homepage": "https://github.com/Ernie3/khs-minithon#readme",
+  "homepage": "https://github.com/KHS-Minithon/website#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-casperjs": "^2.1.0",
