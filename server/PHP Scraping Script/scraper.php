@@ -1,10 +1,10 @@
 <?php
- 
+
 include('simple_html_dom.php');
 
 $page = new simple_html_dom();
 
-$page = file_get_html('http://fourdiamonds.donordrive.com/index.cfm?fuseaction=donorDrive.event&eventID=1179');
+$page = file_get_html('http://fourdiamonds.donordrive.com/event/khs16');
 
 $money_raised = preg_replace('/[^0-9.]/', '', $page->find('#donationsTotal h5', 0)->plaintext);
 $participants = preg_replace('/[^0-9.]/', '', $page->find('#donationsTotal h5', 1)->plaintext);
