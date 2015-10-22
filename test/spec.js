@@ -1,9 +1,9 @@
 casper.test.begin('Important Information', function suite(test) {
 
-    casper.start("http://localhost:9001/", function() {
+    casper.start("http://khs-minithon.github.io/website/", function() {
 
         test.assertHttpStatus(200, 'Connected to main page');
-        test.assertUrlMatch('/', 'URL is root');
+        test.assertUrlMatch('/website', 'URL is root');
 
         test.assertTitle('Kennett High School Mini-THON', 'Title is correct');
 
@@ -107,7 +107,7 @@ casper.test.begin('Important Information', function suite(test) {
 
 casper.test.begin('Important Links', function suite(test) {
 
-    casper.start("http://localhost:9001/", function() {
+    casper.start("http://khs-minithon.github.io/website/", function() {
 
         // Navigation Bar
         test.assertExists('.navbar-nav', 'Navigation Bar Found');
