@@ -126,7 +126,7 @@ casper.test.begin('Important Links', function suite(test) {
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(3) a', 'href'), '#services-section', 'Correct Navigation-Services Link');
 
             // Impact
-            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(4) a'), "Input", "Correct Navigation-Impact Text");
+            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(4) a'), "Impact", "Correct Navigation-Impact Text");
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(4) a', 'href'), '#portfolio-section', 'Correct Navigation-Impact Link');
 
             // Sign Up
