@@ -42,7 +42,7 @@ casper.test.begin('Important Information', function suite(test) {
             test.assertEquals(this.fetchText(".about:nth-child(4) h4"), "Since When?", "Since When? - Correct Title ");
             test.assertEquals(this.fetchText(".about:nth-child(4) p"), "We have been fighting childhood cancer since 2015 with our first annual Mini-THON being held in February of 2016.", "Since When? - Correct Text ");
 
-        // Services Section
+        // Impact Section
         test.assertElementCount('.services', 4, '4 Services Boxes Found');
 
             // Mini-THONs
