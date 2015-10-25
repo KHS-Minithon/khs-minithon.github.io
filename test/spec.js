@@ -67,8 +67,9 @@ casper.test.begin('Important Information', function suite(test) {
 
         // Contact Info
         test.assertElementCount('.contact-info ul li', 3, 'Contact Info Found');
-        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(1)'), "  100E South Street,        Kennett Square,        Pennsylvania, USA, 19348", "Correct Address");
-        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(2)'), "  1-610-444-6617", "Correct Phone Number");
+        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(1)'), "100E South Street,      Kennett Square,      Pennsylvania, USA, 19348", "Correct Address");
+        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(2)'), "1-610-444-6617", "Correct Phone Number");
+        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(3)'), " khsminithon@gmail.com", "Correct Email");
 
         // Four Diamonds Links
         test.assertElementCount('.imp-links li', 6, '6 Four Diamonds Links Found');
