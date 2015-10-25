@@ -42,7 +42,7 @@ casper.test.begin('Important Information', function suite(test) {
             test.assertEquals(this.fetchText(".about:nth-child(4) h4"), "Since When?", "Since When? - Correct Title ");
             test.assertEquals(this.fetchText(".about:nth-child(4) p"), "We have been fighting childhood cancer since 2015 with our first annual Mini-THON being held in February of 2016.", "Since When? - Correct Text ");
 
-        // Services Section
+        // Impact Section
         test.assertElementCount('.services', 4, '4 Services Boxes Found');
 
             // Mini-THONs
@@ -67,8 +67,9 @@ casper.test.begin('Important Information', function suite(test) {
 
         // Contact Info
         test.assertElementCount('.contact-info ul li', 3, 'Contact Info Found');
-        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(1)'), "  100E South Street,        Kennett Square,        Pennsylvania, USA, 19348", "Correct Address");
-        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(2)'), "  1-610-444-6617", "Correct Phone Number");
+        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(1)'), "100E South Street,      Kennett Square,      Pennsylvania, USA, 19348", "Correct Address");
+        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(2)'), "1-610-444-6617", "Correct Phone Number");
+        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(3)'), " khsminithon@gmail.com", "Correct Email");
 
         // Four Diamonds Links
         test.assertElementCount('.imp-links li', 6, '6 Four Diamonds Links Found');
