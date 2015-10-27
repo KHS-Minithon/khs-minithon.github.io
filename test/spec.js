@@ -102,7 +102,7 @@ casper.test.begin('Important Links', function suite(test) {
 
         // Navigation Bar
         test.assertExists('.navbar-nav', 'Navigation Bar Found');
-        test.assertElementCount('.navbar-nav li', 6, '6 Sections in Navigation Bar Found');
+        test.assertElementCount('.navbar-nav li', 8, '8 Sections in Navigation Bar Found');
 
             // Home
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(1) a'), "Home", "Correct Navigation-Home Text");
@@ -130,7 +130,7 @@ casper.test.begin('Important Links', function suite(test) {
 
             // Partners
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(7) a'), "Partners", "Correct Navigation-Partners Text");
-            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#partners-section', 'Correct Navigation-Partner Link');
+            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#partners-section', 'Correct Navigation-Partners Link');
 
             // Social
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(8) a'), "Social", "Correct Navigation-Social Text");
