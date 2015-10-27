@@ -61,12 +61,6 @@ casper.test.begin('Important Information', function suite(test) {
             test.assertEquals(this.fetchText(".services:nth-child(4) p"), "Through Four Diamonds, Penn State Hershey Children's Hospital is seeking improved treatments and cures to benefit those around the world.", "Research - Correct Text ");
             test.assertEquals(this.getElementAttribute('.services:nth-child(4) a', 'href'), 'https://www.youtube.com/watch?v=C7SPFR2T3tg', 'Research Correct Link');
 
-        // Contact Info
-        test.assertElementCount('.contact-info ul li', 3, 'Contact Info Found');
-        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(1)'), "100E South Street,      Kennett Square,      Pennsylvania, USA, 19348", "Correct Address");
-        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(2)'), "1-610-444-6617", "Correct Phone Number");
-        test.assertEquals(this.fetchText('.contact-info ul li:nth-child(3)'), " khsminithon@gmail.com", "Correct Email");
-
         // Four Diamonds Links
         test.assertElementCount('.imp-links li', 6, '6 Four Diamonds Links Found');
 
@@ -108,7 +102,7 @@ casper.test.begin('Important Links', function suite(test) {
 
         // Navigation Bar
         test.assertExists('.navbar-nav', 'Navigation Bar Found');
-        test.assertElementCount('.navbar-nav li', 7, '7 Sections in Navigation Bar Found');
+        test.assertElementCount('.navbar-nav li', 6, '6 Sections in Navigation Bar Found');
 
             // Home
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(1) a'), "Home", "Correct Navigation-Home Text");
@@ -134,9 +128,9 @@ casper.test.begin('Important Links', function suite(test) {
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(6) a'), "Team", "Correct Navigation-Team Text");
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#team-section', 'Correct Navigation-Team Link');
 
-            // Contact
-            //test.assertEquals(this.fetchText('.navbar-nav li:nth-child(7) a'), "Contact", "Correct Navigation-Contact Text");
-            //test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#contact-section', 'Correct Navigation-Contact Link');
+            // Partners
+            //test.assertEquals(this.fetchText('.navbar-nav li:nth-child(7) a'), "Partners", "Correct Navigation-Partners Text");
+            //test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#partners-section', 'Correct Navigation-Partner Link');
 
         // Sign Up Button
         test.assertExists('#sign-up', 'Sign Up Button Found');
