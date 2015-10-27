@@ -13,15 +13,11 @@ casper.test.begin('Important Information', function suite(test) {
 
         // Event Date
         test.assertExists('#event-date', 'Event Date Found');
-        test.assertEquals(this.fetchText('#event-date'), "Come Join Us on February 26, 2016", "Correct Event Date");
+        test.assertEquals(this.fetchText('#event-date'), "Join Us on February 26, 2016", "Correct Event Date");
 
         // Event Slogan
         test.assertExists('#event-slogan', 'Slogan Found');
         test.assertEquals(this.fetchText('#event-slogan'), "For The Fight. For The Cure. For The Kids.", "Correct Event Slogan");
-
-        // Event Date
-        test.assertExists('#event-date', 'Event Date Found');
-        test.assertEquals(this.fetchText('#event-date'), "Come Join Us on February 26, 2016", "Correct About");
 
         // About Section
         test.assertElementCount('.about', 4, '4 About Boxes Found');
@@ -139,8 +135,8 @@ casper.test.begin('Important Links', function suite(test) {
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#team-section', 'Correct Navigation-Team Link');
 
             // Contact
-            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(7) a'), "Contact", "Correct Navigation-Contact Text");
-            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#contact-section', 'Correct Navigation-Contact Link');
+            //test.assertEquals(this.fetchText('.navbar-nav li:nth-child(7) a'), "Contact", "Correct Navigation-Contact Text");
+            //test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#contact-section', 'Correct Navigation-Contact Link');
 
         // Sign Up Button
         test.assertExists('#sign-up', 'Sign Up Button Found');
