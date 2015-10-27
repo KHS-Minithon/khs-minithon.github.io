@@ -2,7 +2,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var fs = require('fs');
 
-var url = "http://fourdiamonds.donordrive.com/index.cfm?fuseaction=donorDrive.event&eventID=1179";
+var url = "http://fourdiamonds.donordrive.com/event/khs16";
 
 
 request(url, function(error, response, html){

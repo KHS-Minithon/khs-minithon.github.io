@@ -47,11 +47,26 @@ var allowCrossDomain = function(req, res, next) {
 
 app.use(allowCrossDomain);
 
+
+var emails = {
+  "overall": "khsminithon@gmail.com",
+  "finance": "khsminithon.finance@gmail.com",
+  "community": "khsminithon.communityoutreach@gmail.com",
+  "events": "khsminithon.specialevents@gmail.com",
+  "hospitality": "khsminithon.hospitality@gmail.com",
+  "operations": "khsminithon.operations@gmail.com",
+  "entertainment": "khsminithon.entertainment@gmail.com",
+  "socialmedia": "khsminithon.socialmedia@gmail.com",
+  "technology": "khsminithon.tech@gmail.com"
+};
+
+
+
 app.post('/email', function(req, res, next) {
 
   var mailOptions = {
     from: req.body.email, // sender address
-    to: 'khsminithon@gmail.com', // list of receivers
+    to: emails[req.body.committe], // list of receivers
     subject: req.body.subject + " Sent by " + req.body.email, // Subject line
     text: req.body.message
   };

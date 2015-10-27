@@ -1,17 +1,15 @@
-
-
-$(document).ready(function(){
+$(document).ready(function() {
 
 	// Get Money Raised Data and Adjust Progress Bar
-	$.getJSON("API/result.json", function(data){
+	$.getJSON("server/PHP Scraping Script/result.json", function(data) {
 
 		var money_raised = data.money_raised;
 		var goal = 5000;
-		var current_money = (money_raised/goal) * 100;
+		var current_money = (money_raised / goal) * 100;
 
-		$(".progress-bar").css({"width": current_money + "%" });
-		$(".progress-bar").attr("aria-valuenow", current_money);
-		$(".progress-bar").text(current_money + "%");
+		$("#money_raised_bar").css({"width": current_money + "%" });
+		$("#money_raised_bar").attr("aria-valuenow", current_money);
+		$("#money_raised_bar").text(current_money + "%");
 
 	});
 
@@ -26,28 +24,28 @@ $(document).ready(function(){
 		var subject = $("#subject").val();
 		var message  = $("#message").val();
 
-		if(name === '' || name.length === 0){
+		if(name === '' || name.length === 0) {
 
 			alert("Name is required.");
 			$("#name").focus();
             return false;
 		}
 
-		if(email === '' || email.length === 0){
+		if(email === '' || email.length === 0) {
 
 			alert("Email is required.");
 			$("#email").focus();
             return false;
 		}
 
-		if(subject === '' || subject.length === 0){
+		if(subject === '' || subject.length === 0) {
 
 			alert("Subject is required.");
 			$("#subject").focus();
             return false;
 		}
 
-		if(message === '' || message.length === 0){
+		if(message === '' || message.length === 0) {
 
 			alert("Message is required.");
 			$("#message").focus();
@@ -66,12 +64,13 @@ $(document).ready(function(){
 				//Confirmation takes too long and we can't wait..time for a hail mary play
 				alert("Email was sent! Thank you.");
 				$('#contact_form').trigger("reset");
+
 			});
 		}
-
 	});
 
-    // Image Gallery Initiation and Settings
+  // Image Gallery Initiation and Settings
+  // **VIDEO POP-UP ONLY WORK IN A SERVER**
 	$('.swipebox').swipebox();
 	$('.swipebox-video').swipebox();
 
