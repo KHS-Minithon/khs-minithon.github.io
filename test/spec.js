@@ -103,7 +103,7 @@ casper.test.begin('Important Links', function suite(test) {
 
         // Navigation Bar
         test.assertExists('.navbar-nav', 'Navigation Bar Found');
-        test.assertElementCount('.navbar-nav li', 8, '8 Sections in Navigation Bar Found');
+        test.assertElementCount('.navbar-nav li', 7, '7 Sections in Navigation Bar Found');
 
             // Home
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(1) a'), "Home", "Correct Navigation-Home Text");
