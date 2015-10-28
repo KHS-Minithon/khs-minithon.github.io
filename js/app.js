@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
 	// Get Money Raised Data and Adjust Progress Bar
-
 	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json";
 
 	$.getJSON(khs_spreadsheet).done(function(data) {
@@ -27,8 +26,10 @@ $(document).ready(function() {
 
 	}).fail(function(jqxhr, textStatus, error ) {
 
+		// If this fails, we will set it to some value so it doesn't look werid,
+		// while still showing we have raised money
 		var goal = 5000;
-		var money_raised = 2500;
+		var money_raised = 450;
 		var current_money = (money_raised / goal) * 100;
 
 		$("#money_raised_bar").css({"width": current_money + "%" });
@@ -36,7 +37,7 @@ $(document).ready(function() {
 		$("#current_money").text("$" + money_raised);
 
 		var status = textStatus + ", " + error;
-		console.log( "Request Failed: " + status );
+		console.error("Request Failed: " + status );
 
 	});
 
@@ -52,7 +53,6 @@ $(document).ready(function() {
 		var message  = $("#message").val();
 
 		if(name === '' || name.length === 0) {
-
 			alert("Name is required.");
 			$("#name").focus();
             return false;
@@ -88,7 +88,7 @@ $(document).ready(function() {
 				}
 			).done(function() {
 
-				//Confirmation takes too long and we can't wait..time for a hail mary play
+				// Confirmation takes too long and we can't wait..time for a hail mary play
 				alert("Email was sent! Thank you.");
 				$('#contact_form').trigger("reset");
 
