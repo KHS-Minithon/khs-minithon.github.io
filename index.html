@@ -670,7 +670,7 @@
                             <div class="col-md-2">
                                 <div class="team-container wow bounceIn" data-wow-delay="0.2s">
                                     <div class="team-item">
-                                        <div class="team-triangle">
+                                        <div class="team-triangle" data-toggle="modal" data-target="#OverallModal">
                                             <div class="content">
                                                 <img src="img/team/kennett-blue-demons.jpg" alt="overall team">
                                                 <div class="team-hover text-center">
@@ -681,7 +681,43 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Overall Modal -->
+                            <div class="modal fade" id="OverallModal" tabindex="-1" role="dialog" style="z-index: 10000" aria-labelledby="myModalLabel">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Overall</h4>
+                                  </div>
+                                  <div class="modal-body" style="height: 205px;">
+
+                                    <div class="row">
+                                      <div class="col-sm-5 col-md-5">
+                                        <a href="#" class="thumbnail">
+                                          <img src="img/team/overall-raw.jpg" alt="...">
+                                        </a>
+                                      </div>
+
+                                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                      <br>
+                                      <strong>Email:</strong> yourmom@hotmail.com
+                                    </div>
+
+
+
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+
+
+                            </div>
+
+                            
 
                             <!-- Finances -->
                             <div class="col-md-2">
