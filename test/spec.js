@@ -134,8 +134,8 @@ casper.test.begin('Important Links', function suite(test) {
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#partners-section', 'Correct Navigation-Partners Link');
 
             // Social
-            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(6) a'), "Social", "Correct Navigation-Social Text");
-            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(6) a', 'href'), '#social-section', 'Correct Navigation-Social Link');
+            test.assertEquals(this.fetchText('.navbar-nav li:nth-child(7) a'), "Social", "Correct Navigation-Social Text");
+            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(7) a', 'href'), '#social-section', 'Correct Navigation-Social Link');
 
         // Sign Up Button
         test.assertExists('#sign-up', 'Sign Up Button Found');
