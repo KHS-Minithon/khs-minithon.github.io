@@ -40,7 +40,7 @@ function showRemaining() {
         h = hours + ' hour ';
     }
 
-    if(minutes > 1 || minutes === 0) {
+    if(minutes > 1) {
         min = minutes + ' minutes ';
     }
     else if(minutes === 1) {

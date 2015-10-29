@@ -40,7 +40,7 @@ body .body {
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 }
-*:focus { 
+*:focus {
 	outline: none !important;
 	box-shadow: none !important;
 }
@@ -537,7 +537,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	z-index: 5;
 	margin-bottom:30px;
 	overflow:hidden;
-	
+
 }
 .portfolio_single_content:hover img{
 	 -o-transform: scale(2);
@@ -646,7 +646,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 /* ===== Begin team ===== */
 .team-item {
 	height: 120px;
-}	
+}
 .team-item .team-triangle {
 	width: 120px;
 	height: 120px;
@@ -809,7 +809,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	border-left-color: #ccc }
 .bwizard-steps.clickable li:hover:not(.active) a {
 	color: #08c }
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
 	/* badges only on small screens */
 	.bwizard-steps li:after,
 	.bwizard-steps li:before {
@@ -830,8 +830,8 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info {color: #000; font-size: 14px; margin-top: 25px;}
-.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #ECECEC; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%  !important;} 
-.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #3333FF; border-radius: 50px; position: absolute; top: 8px; left: 8px; } 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #ECECEC; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%  !important;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #3333FF; border-radius: 50px; position: absolute; top: 8px; left: 8px; }
 .bs-wizard > .bs-wizard-step > .progress-step {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
 .bs-wizard > .bs-wizard-step > .progress-step > .progress-bar {width:0px; box-shadow: none; margin-top: 5px; background: #3333FF;}
 .bs-wizard > .bs-wizard-step.complete > .progress-step > .progress-bar {width:100%;}
