@@ -13,7 +13,7 @@ casper.test.begin('Important Information', function suite(test) {
 
         // Event Date
         test.assertExists('#event-date', 'Event Date Found');
-        test.assertEquals(this.fetchText('#event-date'), "Join Us on February 26, 2016", "Correct Event Date");
+        test.assertEquals(this.fetchText('#event-date'), "Join us on February 26, 2016", "Correct Event Date");
 
         // Event Slogan
         test.assertExists('#event-slogan', 'Slogan Found');
