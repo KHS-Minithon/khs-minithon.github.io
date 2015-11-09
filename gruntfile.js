@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 	        options: {
 	          patterns: [
 	            {
-	              match: "http://khs-minithon.github.io/website/",
+	              match: "http://khsminithon.org/",
 	              replacement: 'http://localhost:9001/'
 	            }
 	          ]
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
 	grunt.registerTask('local-test', 'Start Server for Test', function() {
-		
+
 	  grunt.task.run('change');
 	  grunt.task.run('test');
 
@@ -61,4 +61,3 @@ module.exports = function(grunt) {
 	// grunt.registerTask('default', 'connect:server:keepalive');
 
 };
-

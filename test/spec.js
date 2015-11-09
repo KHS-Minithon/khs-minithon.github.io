@@ -1,9 +1,9 @@
 casper.test.begin('Important Information', function suite(test) {
 
-    casper.start("http://khs-minithon.github.io/website/", function() {
-
+    //casper.start("http://localhost:9001/", function() { // used for local deving
+    casper.start("http://khsminithon.org/", function() {
         test.assertHttpStatus(200, 'Connected to main page');
-        test.assertUrlMatch('/website', 'URL is root');
+        test.assertUrlMatch('/', 'URL is root');
 
         test.assertTitle('Kennett High School Mini-THON', 'Title is correct');
 
@@ -61,34 +61,48 @@ casper.test.begin('Important Information', function suite(test) {
             test.assertEquals(this.fetchText(".services:nth-child(4) p"), "Through Four Diamonds, Penn State Hershey Children's Hospital is seeking improved treatments and cures to benefit those around the world.", "Research - Correct Text ");
             test.assertEquals(this.getElementAttribute('.services:nth-child(4) a', 'href'), 'https://www.youtube.com/watch?v=C7SPFR2T3tg', 'Research Correct Link');
 
-            /* Add this exactly like this Travis going to flip
-        // Four Diamonds Links
-        test.assertElementCount('.imp-links li', 6, '6 Four Diamonds Links Found');
+        // Extra info
+        test.assertElementCount(".imp-links li", 9, '9 List Elements of Important Extra Links Found');
+
+            // Address header
+            test.assertEquals(this.fetchText(".imp-links h4:nth-child(1)"), "Contact Us", "Extra Info - Contact Us Header");
+
+            //test.assertEquals(this.fetchText(".imp-links li:nth-child(2)"), "100 E South Street, Kennett Square, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pennsylvania, USA 19348<br><br>", "Extra Info - Correct Address Text");
+            test.assertEquals(this.getElementAttribute(".imp-links li:nth-child(2) a", "href"), "https://goo.gl/maps/FED9CCrRR8S2", "Extra Info - Correct Map Link");
+
+            // Phone
+            //test.assertEquals(this.fetchText(".imp-links li:nth-child(3)", "&nbsp;&nbsp;1-610-444-6617<br><br>", "Extra Info - Phone Number"));
+
+            // Email
+            //test.assertEquals(this.fetchText(".imp-links li:nth-child(4)", "&nbsp;&nbsp;khsminithon@gmail.co", "Extra Info - Email"));
+
+            // Four Diamonds header
+            test.assertEquals(this.fetchText(".imp-links h4:nth-child(5)"), "Four Diamonds Links", "Extra Info - Four Diamonds Links Header");
 
             // About
-            test.assertEquals(this.fetchText('.imp-links li:nth-child(1)'), 'About', 'About - Correct Text');
-            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(1) a', 'href'), 'http://www.fourdiamonds.org/about-us/#sidr-main', 'About - Correct Link');
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(6)'), 'About', 'About - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(6) a', 'href'), 'http://www.fourdiamonds.org/about-us/#sidr-main', 'About - Correct Link');
 
             // History
-            test.assertEquals(this.fetchText('.imp-links li:nth-child(2)'), 'History', 'History - Correct Text');
-            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(2) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usour-history', 'History - Correct Link');
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(7)'), 'History', 'History - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(7) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usour-history', 'History - Correct Link');
 
             // Financials
-            test.assertEquals(this.fetchText('.imp-links li:nth-child(3)'), 'Financials', 'Financials - Correct Text');
-            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(3) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usfinancials', 'Financials - Correct Link');
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(8)'), 'Financials', 'Financials - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(8) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usfinancials', 'Financials - Correct Link');
 
             // Penn State
-            test.assertEquals(this.fetchText('.imp-links li:nth-child(4)'), 'Penn State', 'Penn State - Correct Text');
-            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(4) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usrelationship-to-penn-state', 'Penn State - Correct Link');
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(9)'), 'Penn State', 'Penn State - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(9) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usrelationship-to-penn-state', 'Penn State - Correct Link');
 
             // Staff
-            test.assertEquals(this.fetchText('.imp-links li:nth-child(5)'), 'Staff', 'Staff - Correct Text');
-            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(5) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usstaff', 'Staff - Correct Link');
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(10)'), 'Staff', 'Staff - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(10) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usstaff', 'Staff - Correct Link');
 
             // Families
-            test.assertEquals(this.fetchText('.imp-links li:nth-child(6)'), 'Families', 'Families - Correct Text');
-            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(6) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usmeet-our-families', 'Families - Correct Link');
-            */
+            test.assertEquals(this.fetchText('.imp-links li:nth-child(11)'), 'Families', 'Families - Correct Text');
+            test.assertEquals(this.getElementAttribute('.imp-links li:nth-child(11) a', 'href'), 'http://www.fourdiamonds.org/about-us/#about-usmeet-our-families', 'Families - Correct Link');
+
     });
 
     casper.run(function() {
