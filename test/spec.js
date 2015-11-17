@@ -1,7 +1,9 @@
+var TargetUrl = "http://khsminithon.org/"; // prod
+                //"http://localhost:9001/"; // local dev
+
 casper.test.begin('Important Information', function suite(test) {
 
-    //casper.start("http://localhost:9001/", function() { // used for local deving
-    casper.start("http://khsminithon.org/", function() {
+    casper.start(TargetUrl, function() {
         test.assertHttpStatus(200, 'Connected to main page');
         test.assertUrlMatch('/', 'URL is root');
 
@@ -113,7 +115,7 @@ casper.test.begin('Important Information', function suite(test) {
 
 casper.test.begin('Important Links', function suite(test) {
 
-    casper.start("http://khs-minithon.github.io/website/", function() {
+    casper.start(TargetUrl, function() {
 
         // Navigation Bar
         test.assertExists('.navbar-nav', 'Navigation Bar Found');
