@@ -171,7 +171,7 @@ casper.test.begin('Important Links', function suite(test) {
         test.assertElementCount('.social-list li', 4, '4 Social Media Buttons Found');
 
             // Facebook
-            test.assertEquals(this.getElementAttribute('.social-list li:nth-child(1) a', 'href'), 'https://www.facebook.com/FourDiamondsFund', 'Correct Facebook Link');
+            test.assertEquals(this.getElementAttribute('.social-list li:nth-child(1) a', 'href'), 'https://www.facebook.com/khsminithon/', 'Correct Facebook Link');
 
             // Twitter
             test.assertEquals(this.getElementAttribute('.social-list li:nth-child(2) a', 'href'), 'https://twitter.com/khsminithon', 'Correct Twitter Link');
