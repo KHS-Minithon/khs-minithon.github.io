@@ -1298,6 +1298,16 @@ p.technology {
 	font-size: 18px;
 }
 
+.event-date {
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+}
+
+.event-details {
+	font-size: 22px;
+}
+
 #countdown {
 	font-weight: bold;
 }
