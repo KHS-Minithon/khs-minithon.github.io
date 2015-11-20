@@ -187,7 +187,7 @@ casper.test.begin('Important Links', function suite(test) {
     casper.run(function() {
         test.done();
 
-         // work around "Unsafe JavaScript attempt to access frame with URL about:blank" error
+        // work around "Unsafe JavaScript attempt to access frame with URL about:blank" error
         // http://stackoverflow.com/questions/26608391/using-phantomjs-to-embed-all-images-of-a-webpage-produces-warnings-but-works/26688062#26688062
         setTimeout(function() {
             phantom.exit();
