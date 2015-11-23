@@ -1305,9 +1305,14 @@ p.technology {
 }
 
 .event-details {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 #countdown {
 	font-weight: bold;
+}
+
+div.center {
+	width: 50%;
+	margin: 0px auto;
 }
