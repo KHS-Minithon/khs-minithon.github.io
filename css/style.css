@@ -1326,3 +1326,20 @@ div.center {
     text-align: center;
 	margin: 0px auto;
 }
+
+.sub-header {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+/* Yes, a sub sub menu... Deal with it */
+.sub-sub-header {
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+div.up {
+	position: relative;
+	top: -80px;
+}
