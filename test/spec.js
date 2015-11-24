@@ -70,7 +70,7 @@ casper.test.begin('Important Information', function suite(test) {
             test.assertEquals(this.fetchText(".imp-links h4:nth-child(1)"), "Contact Us", "Extra Info - Contact Us Header");
 
             //test.assertEquals(this.fetchText(".imp-links li:nth-child(2)"), "100 E South Street, Kennett Square, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pennsylvania, USA 19348<br><br>", "Extra Info - Correct Address Text");
-            test.assertEquals(this.getElementAttribute(".imp-links li:nth-child(2) a", "href"), "https://goo.gl/maps/FED9CCrRR8S2", "Extra Info - Correct Map Link");
+            test.assertEquals(this.getElementAttribute(".imp-links li:nth-child(2) a", "href"), "https://goo.gl/Of0EKQ", "Extra Info - Correct Map Link");
 
             // Phone
             //test.assertEquals(this.fetchText(".imp-links li:nth-child(3)", "&nbsp;&nbsp;1-610-444-6617<br><br>", "Extra Info - Phone Number"));
