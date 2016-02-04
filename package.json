@@ -24,6 +24,11 @@
     "grunt-casperjs": "^2.1.0",
     "grunt-contrib-connect": "^0.11.2",
     "grunt-replace": "^0.11.0",
-    "grunt-string-replace": "^1.2.0"
+    "grunt-string-replace": "^1.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-uglify": "^1.5.1"
   }
 }
