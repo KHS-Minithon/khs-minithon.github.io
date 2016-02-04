@@ -5,3 +5,21 @@
 Website for Kennett High School's Four Diamonds club
 
 http://www.khsminithon.org/
+
+
+```
+ npm install -g gulp
+ npm install
+```
+
+##Development
+
+``` gulp dev ```
+
+##Production
+
+``` gulp prod ``
+
+
+![das it mane](http://ell.h-cdn.co/assets/16/04/1454089826-kanyeparty.gif)
+
