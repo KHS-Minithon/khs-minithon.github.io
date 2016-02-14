@@ -21,7 +21,12 @@ $(document).ready(function() {
 		var goal = 5000;
 		var current_money = (money_raised / goal) * 100;
 
-		$("#money_raised_bar").css({"width": current_money + "%" });
+		if(current_money > 100) {
+			$("#money_raised_bar").css({"width": 100 + "%" });
+		} else {
+			$("#money_raised_bar").css({"width": current_money + "%" });
+		}
+
 		$("#money_raised_bar").attr("aria-valuenow", current_money);
 		$("#current_money").text("$" + money_raised);
 
