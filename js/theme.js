@@ -108,7 +108,7 @@ $("#owl-partners").owlCarousel({
     itemsDesktopSmall : [980,2],
     itemsTablet: [768,2],
     autoPlay : 5000,
-    stopOnHover : true,
+    stopOnHover : false,
     pagination : false
 });
 
