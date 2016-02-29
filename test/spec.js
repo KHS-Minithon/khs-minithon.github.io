@@ -157,10 +157,10 @@ casper.test.begin('Important Links', function suite(test) {
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(8) a'), "Social", "Correct Navigation-Social Text");
             test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(8) a', 'href'), '#social-section', 'Correct Navigation-Social Link');
 
-        // Sign Up Button
-        test.assertExists('#sign-up', 'Sign Up Button Found');
-        test.assertEquals(this.fetchText('#sign-up strong'), "Sign up", "Correct Sign Up Button Text");
-        test.assertEquals(this.getElementAttribute('#sign-up', 'href'), 'http://fourdiamonds.donordrive.com/event/khs16', 'Correct Sign Up Link');
+        // Main Donate Button
+        test.assertExists('#main-donate', 'Main Donate Button Found');
+        test.assertEquals(this.fetchText('#main-donate strong'), "Donate", "Correct Donate Button Text");
+        test.assertEquals(this.getElementAttribute('#main-donate', 'href'), 'https://fourdiamonds.donordrive.com/index.cfm?fuseaction=donate.event&eventID=1179', 'Correct Sign Up Link');
 
         // Donate Button
         test.assertExists('#donate', 'Donate Button Found');
