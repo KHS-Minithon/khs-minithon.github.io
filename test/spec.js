@@ -155,7 +155,7 @@ casper.test.begin('Important Links', function suite(test) {
 
             // Sponsors
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(8) a'), "Sponsors", "Correct Navigation-Sponsors Text");
-            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(8) a', 'href'), '#partners-section', 'Correct Navigation-Sponsors Link');
+            test.assertEquals(this.getElementAttribute('.navbar-nav li:nth-child(8) a', 'href'), '#sponsors-section', 'Correct Navigation-Sponsors Link');
 
             // Social
             test.assertEquals(this.fetchText('.navbar-nav li:nth-child(9) a'), "Social", "Correct Navigation-Social Text");
