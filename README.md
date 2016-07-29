@@ -19,9 +19,3 @@ http://www.khsminithon.org/
 ##Production
 
 ``` gulp prod ```
-
-
-![das it mane](http://ell.h-cdn.co/assets/16/04/1454089826-kanyeparty.gif)
-
-![dancing](https://media.giphy.com/media/lzIFSTPcYN6Rq/giphy.gif)
-
