@@ -87,10 +87,5 @@ gulp.task('devReplace', function() {
     .pipe(gulp.dest('./'));
 });
 
-
-
-
 gulp.task('prod', ['bundleCSS', 'prodReplace']);
-
-
 gulp.task('dev', ['devReplace']);
