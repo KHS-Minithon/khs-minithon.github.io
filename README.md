@@ -1,21 +1,17 @@
-# KHS Mini-THON Website
-[![Build Status](https://api.travis-ci.org/KHS-Minithon/khs-minithon.github.io.svg?branch=master)](https://travis-ci.org/KHS-Minithon/khs-minithon.github.io)
+# KHS MiniTHON Website
 [![devDependency Status](https://david-dm.org/khs-minithon/khs-minithon.github.io/dev-status.svg)](https://david-dm.org/khs-minithon/khs-minithon.github.io#info=devDependencies)
 
-Website for Kennett High School's Four Diamonds club
-
-http://www.khsminithon.org/
-
-
+Too get things going"
 ```
- npm install -g gulp
+ git clone https://github.com/KHS-Minithon/khs-minithon.github.io.git
+ cd khs-minithon.github.io
  npm install
 ```
 
 ##Development
 
-``` gulp dev ```
+``` npm run dev ```
 
 ##Production
 
-``` gulp prod ```
+``` npm run prod ```
