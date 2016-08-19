@@ -1,4 +1,4 @@
-# KHS MiniTHON Website
+# KHS Mini-THON Website
 [![devDependency Status](https://david-dm.org/khs-minithon/khs-minithon.github.io/dev-status.svg)](https://david-dm.org/khs-minithon/khs-minithon.github.io#info=devDependencies)
 
 To work on this project:
