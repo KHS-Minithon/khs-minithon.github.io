@@ -3,15 +3,15 @@
 
 To work on this project:
 ```
- git clone https://github.com/KHS-Minithon/khs-minithon.github.io.git
- cd khs-minithon.github.io
- npm install
+ $ git clone https://github.com/KHS-Minithon/khs-minithon.github.io.git
+ $ cd khs-minithon.github.io
+ $ npm install
 ```
 
 ##Development
 
-``` npm run dev ```
+``` $ npm run dev ```
 
 ##Production
 
-``` npm run prod ```
+``` $ npm run prod ```
