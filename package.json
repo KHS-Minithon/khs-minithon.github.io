@@ -1,26 +1,23 @@
 {
-  "name": "khs-minithon",
+  "name": "khs-minithon.github.io",
   "version": "1.0.0",
+  "license": "MIT",
+  "author": "KHS MiniTHON Technology Committee",
   "description": "Website for Kennett High School's Four Diamonds club",
-  "main": "gruntfile.js",
-  "directories": {
-    "test": "test"
+  "homepage": "https://github.com/KHS-Minithon/website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KHS-Minithon/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KHS-Minithon/website/issues",
+    "email": "khsminithon.tech@gmail.com"
   },
   "scripts": {
     "dev": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js dev",
     "prod": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KHS-Minithon/website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KHS-Minithon/website/issues"
-  },
-  "homepage": "https://github.com/KHS-Minithon/website#readme",
   "devDependencies": {
     "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.3.0",
