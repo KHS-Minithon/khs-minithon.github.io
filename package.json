@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js dev",
     "prod": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js prod",
+    "start": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "gulp-concat-css": "^2.3.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-html-replace": "^1.6.1",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "gulp-open": "^2.0.0"
   }
 }

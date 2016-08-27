@@ -4,6 +4,7 @@ var htmlreplace = require('gulp-html-replace');
 var concatCss = require('gulp-concat-css');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var open = require("gulp-open");
  
 
 gulp.task('bundleCSS', function() {
@@ -31,7 +32,7 @@ gulp.task('bundleCSS', function() {
 // 	                 'js/app.js'
 // 	                ])
 // 	.pipe(concat('bundle.min.js'))
-//     //.pipe(uglify())
+//     .pipe(uglify())
 //     .pipe(gulp.dest('js'));
 // });
 
@@ -87,5 +88,11 @@ gulp.task('devReplace', function() {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task("open", function() {
+    return gulp.src("./index.html")
+            .pipe(open());
+});
+
 gulp.task('prod', ['bundleCSS', 'prodReplace']);
 gulp.task('dev', ['devReplace']);
+gulp.task("start", ["open"]);
