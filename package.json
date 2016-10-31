@@ -2,7 +2,7 @@
   "name": "khs-minithon.github.io",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "KHS Mini-THON Technology Committee",
+  "author": "KHS Mini-THON",
   "description": "Website for Kennett High School's annual Mini-THON",
   "homepage": "https://github.com/KHS-Minithon/website",
   "repository": {
@@ -14,8 +14,8 @@
     "email": "khsminithon.tech@gmail.com"
   },
   "scripts": {
-    "dev": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js dev",
-    "prod": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js prod",
+    "set:dev": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js dev",
+    "set:prod": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js prod",
     "start": "node node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

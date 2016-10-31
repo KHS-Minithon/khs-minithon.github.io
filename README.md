@@ -1,26 +1,25 @@
 # KHS Mini-THON Website
 [![devDependency Status](https://david-dm.org/khs-minithon/khs-minithon.github.io/dev-status.svg)](https://david-dm.org/khs-minithon/khs-minithon.github.io#info=devDependencies)
 
-###To work on this project:
+##To Work on this Project:
+Make sure you have NodeJS and Git installed and do the following:
 ```
- $ git clone https://github.com/KHS-Minithon/khs-minithon.github.io.git
- $ cd khs-minithon.github.io
- $ npm install
-```
-
-###To run this project locally:
-```
- $ npm start
+ $> git clone https://github.com/KHS-Minithon/khs-minithon.github.io.git
+ $> cd khs-minithon.github.io
+ $> npm install
 ```
 
-###To set development mode (no JS/CSS bundling)
+##To Run this Project:
+```
+ $> npm start
+```
 
+##To Set Development Mode (no JS/CSS bundling)
 ``` 
- $ npm run dev
+ $> npm run set:dev
 ```
 
-###To set production mode (JS/CSS bundling)
-
+##To Set Production Mode (JS/CSS bundling)
 ``` 
- $ npm run prod
+ $> npm run set:prod
 ```
