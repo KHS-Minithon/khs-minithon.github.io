@@ -18,7 +18,7 @@ $(document).ready(function() {
 			}
 		};
 
-		var goal = 5000;
+		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
 
 		if(current_money > 100) {
