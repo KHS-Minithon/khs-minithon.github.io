@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// Get Money Raised Data and Adjust Progress Bar
 	// Spreadsheet: https://docs.google.com/spreadsheets/d/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/pubhtml & https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json
-	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json";
+	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney?alt=json";
 
 	$.getJSON(khs_spreadsheet).done(function(data) {
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 		for (var i = 1; i < data.feed.entry.length; i++) {
 
-			if (data.feed.entry[i].content.type.title['$t'].length > 0) {
+			if (data.feed.entry[i].content.['$t'].length > 0) {
 
 				var entry = data.feed.entry[i].content['$t'];
 
