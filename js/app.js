@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 		for (var i = 1; i < data.feed.entry.length; i++) {
 
-			if (data.feed.entry[i].content['$t'].length > 0) {
+			if (data.feed.entry[i].content.type.title.$t.length > 0) {
 
 				var entry = data.feed.entry[i].content['$t'];
 
