@@ -18,8 +18,8 @@ $(document).ready(function() {
 //			}
 //		};
 
-	var result;
-    function money_raised() {
+	var money_raised;
+    function xmlparser() {
         $.ajax({
             type: "GET",
             url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
