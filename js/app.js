@@ -11,8 +11,8 @@ $(document).ready(function() {
 	success: function(data) {
         	 var xmlDoc = $.parseXML(data),
  		 $xmlDoc = $(xmlDoc),
-  		xml = $xmlDoc.find('content');
-		var money_raised = xml.find('content');
+  		xml = $xmlDoc.find("<content type='text'>");
+		var money_raised = xml
 
 		
 				}
