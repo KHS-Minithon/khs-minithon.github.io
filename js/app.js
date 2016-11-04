@@ -10,9 +10,9 @@ $(document).ready(function() {
 
 		for (var i = 1; i < data.feed.entry.length; i++) {
 
-			if (data.feed.entry[i].content['TOTAL ACTUAL INCOME TO DATE'].length > 0) {
+			if (data.feed.entry[i].content['$t'].length > 0) {
 
-				var entry = data.feed.entry[i].content['TOTAL ACTUAL INCOME TO DATE'];
+				var entry = data.feed.entry[i].content['$t'];
 
 				money_raised += parseInt(entry.replace(/[^0-9.]/g, ""));
 			}
