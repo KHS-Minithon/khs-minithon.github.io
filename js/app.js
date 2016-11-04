@@ -25,7 +25,7 @@ $(document).ready(function() {
             url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
             dataType: "xml",
             success: function (xml) {
-                result = $(xml).find("content").text();
+                money_raised = $(xml).find("content").text();
                 document.myform.result1.value = money_raised;
             },
             error: function (xml) {
