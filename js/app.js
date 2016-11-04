@@ -8,8 +8,8 @@ $(document).ready(function() {
     url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
     type: "GET",
     dataType: "xml",
-	success: function(data) {
-        	var xml = $.parseXML(data)
+	success: function(xml) {
+        	var xml = $.parseXML(xml)
         	var money_raised = $(xml).find('content'); 
     }       
     );
