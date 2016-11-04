@@ -4,20 +4,7 @@ $(document).ready(function() {
 	// Spreadsheet: https://docs.google.com/spreadsheets/d/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/pubhtml & https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json
 	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney?alt=json";
 
-	$.getJSON(khs_spreadsheet).done(function(data) {
-
-		var money_raised = 0;
-
-		for (var i = 1; i < data.feed.entry.content.$t.length; i++) {
-
-			if (data.feed.entry[i].content.$t.length > 0) {
-
-				var entry = data.feed.entry[i].content.$t;
-
-				money_raised += parseInt(entry.replace(/[^0-9.]/g, ""));
-			}
-		};
-
+	TURN INTO XML
 	
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
