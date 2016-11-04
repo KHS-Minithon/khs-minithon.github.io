@@ -9,9 +9,16 @@ $(document).ready(function() {
     type: "GET",
     dataType: "xml",
 	success: function(xml) {
-        	var xml = $.parseXML(xml)
-        	var money_raised = $(xml).find('content'); 
-    }       
+        	var  = $.parseXML(data),
+ 		 $xml = $(xml),
+  		$test = $xml.find('content');
+
+		var money_raised += parseInt($test.replace(/[^0-9.]/g, ""));
+		
+				}
+	
+        	
+           
     );
 	
 		var goal = 65000;
