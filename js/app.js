@@ -2,22 +2,36 @@ $(document).ready(function() {
 
 	// Get Money Raised Data and Adjust Progress Bar
 	// Spreadsheet: https://docs.google.com/spreadsheets/d/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/pubhtml & https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json
-	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney";
+//	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney";
+//
+//	$.getJSON(khs_spreadsheet).done(function(data) {
+//
+//		var money_raised = 0;
+//
+//		for (var i = 1; i < data.feed.entry.length; i++) {
+//
+//			if (data.feed.entry[i].content['$t'].length > 0) {
+//
+//				var entry = data.feed.entry[i].content['$t'];
+//
+//				money_raised += parseInt(entry.replace(/[^0-9.]/g, ""));
+//			}
+//		};
 
-	$.getJSON(khs_spreadsheet).done(function(data) {
-
-		var money_raised = 0;
-
-		for (var i = 1; i < data.feed.entry.length; i++) {
-
-			if (data.feed.entry[i].content['content type='text''].length > 0) {
-
-				var entry = data.feed.entry[i].content['content type='text''];
-
-				money_raised += parseInt(entry.replace(/[^0-9.]/g, ""));
-			}
-		};
-
+	var x = new XMLHttpRequest();
+		x.open("GET", "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney", true);
+		x.onreadystatechange = function () {
+	  if (x.readyState == 4 && x.status == 200)
+ 		 {
+ 	   var spreadsheet = x.responseXML;
+ 		   // …
+		 	 }
+	};
+	
+	var money_raised = doc.getElementsByTagName("channel")[0].getElementsByTagName("TOTAL ACTUAL INCOME TO DATE")[0].firstChild.nodeValue;
+		
+	x.send(null);
+	
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
 
