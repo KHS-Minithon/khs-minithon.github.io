@@ -18,15 +18,13 @@ $(document).ready(function() {
 //			}
 //		};
 
-	var money_raised;
     function xmlparser() {
         $.ajax({
             type: "GET",
             url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
             dataType: "xml",
             success: function (xml) {
-                money_raised = $(xml).find("content").text();
-                document.myform.result1.value = money_raised;
+                var money_raised = $(xml).find("content").text();
             },
             error: function (xml) {
                 alert(xml.status + ' ' + xml.statusText);
