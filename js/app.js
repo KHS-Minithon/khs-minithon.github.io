@@ -10,9 +10,9 @@ $(document).ready(function() {
 
 		for (var i = 1; i < data.feed.entry.length; i++) {
 
-			if (data.feed.entry[i].content['$t'].length > 0) {
+			if (data.feed.entry[i].content['Row: 10','Row: 9','Row: 8'].length > 0) {
 
-				var entry = data.feed.entry[i].content['$t'];
+				var entry = data.feed.entry[i].content['Row: 10','Row: 9','Row: 8'];
 
 				money_raised += parseInt(entry.replace(/[^0-9.]/g, ""));
 			}
