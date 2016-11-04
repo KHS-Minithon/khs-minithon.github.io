@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 	// Get Money Raised Data and Adjust Progress Bar
-	// Spreadsheet: https://docs.google.com/spreadsheets/d/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/pubhtml
-	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json";
+	// Spreadsheet: https://docs.google.com/spreadsheets/d/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/pubhtml & https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json
+	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney";
 
 	$.getJSON(khs_spreadsheet).done(function(data) {
 
