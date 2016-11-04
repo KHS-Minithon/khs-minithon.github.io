@@ -18,19 +18,17 @@ $(document).ready(function() {
 //			}
 //		};
 
-    function xmlparser() {
-        $.ajax({
-            type: "GET",
-            url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
-            dataType: "xml",
-            success: function (xml) {
-                var money_raised = $(xml).find("content").text();
-            },
-            error: function (xml) {
-                alert(xml.status + ' ' + xml.statusText);
-            }
-        });             
-    }       
+  $.ajax({
+             type: "GET",
+             url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
+             dataType: "xml",
+             success: function(xml) {
+                 $(xml).find('content').each(function(){
+                     var money_raised = $(xml).find('content').text()
+		     
+                 }); //close each(
+             }
+         }); //close $.ajax(  
 	
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
