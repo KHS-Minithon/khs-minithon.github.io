@@ -2,9 +2,17 @@ $(document).ready(function() {
 
 	// Get Money Raised Data and Adjust Progress Bar
 	// Spreadsheet: https://docs.google.com/spreadsheets/d/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/pubhtml & https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic?alt=json
-	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney?alt=json";
+	var khs_spreadsheet = "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney";
 
-	TURN INTO XML
+	  $.ajax({
+    url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney" + searchString,
+    type: "GET",
+    dataType: "xml",
+	success: function(data) {
+        	var xml = $.parseXML(data)
+        	var money_raised = $(xml).find('content'); 
+    }       
+    );
 	
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
