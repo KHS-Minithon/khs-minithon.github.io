@@ -8,12 +8,12 @@ $(document).ready(function() {
     url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
     type: "GET",
     dataType: "xml",
-	success: function(xml) {
-        	var  = $.parseXML(data),
- 		 $xml = $(xml),
-  		$test = $xml.find('content');
+	success: function(data) {
+        	 var xmlDoc = $.parseXML(data),
+ 		 $xmlDoc = $(xmlDoc),
+  		xml = $xmlDoc.find('content');
+		var money_raised = xml.find('content');
 
-		var money_raised += parseInt($test.replace(/[^0-9.]/g, ""));
 		
 				}
 	
