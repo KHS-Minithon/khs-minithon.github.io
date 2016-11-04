@@ -28,7 +28,7 @@ $(document).ready(function() {
 		 	 }
 	};
 	
-	var money_raised = doc.getElementsByTagName("channel")[0].getElementsByTagName("TOTAL ACTUAL INCOME TO DATE")[0].firstChild.nodeValue;
+	var money_raised = spreadsheet.getElementsByTagName("TOTAL ACTUAL INCOME TO DATE")[0].firstChild.nodeValue;
 		
 	x.send(null);
 	
