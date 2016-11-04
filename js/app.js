@@ -18,19 +18,21 @@ $(document).ready(function() {
 //			}
 //		};
 
-	var x = new XMLHttpRequest();
-		x.open("GET", "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney", true);
-		x.onreadystatechange = function () {
-	  if (x.readyState == 4 && x.status == 200)
- 		 {
- 	   var spreadsheet = x.responseXML;
- 		   // …
-		 	 }
-	};
-	
-	var money_raised = spreadsheet.getElementsByTagName("TOTAL ACTUAL INCOME TO DATE")[0].firstChild.nodeValue;
-		
-	x.send(null);
+	var result;
+    function money_raised() {
+        $.ajax({
+            type: "GET",
+            url: "https://spreadsheets.google.com/feeds/list/1PE1umwfQwSwaNxX_Hishe8kKmcNPRQmRBv-GrPrBFDw/od6/public/basic/d9ney",
+            dataType: "xml",
+            success: function (xml) {
+                result = $(xml).find("content").text();
+                document.myform.result1.value = money_raised;
+            },
+            error: function (xml) {
+                alert(xml.status + ' ' + xml.statusText);
+            }
+        });             
+    }       
 	
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
