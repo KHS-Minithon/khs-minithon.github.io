@@ -8,11 +8,11 @@ $(document).ready(function() {
 
 		var money_raised = 0;
 
-		for (var i = 1; i < data.feed.entry.length; i++) {
+		for (var i = 1; i < data.feed.entry.content.$t.length; i++) {
 
-			if (data.feed.entry[i].content.['$t'].length > 0) {
+			if (data.feed.entry[i].content.$t.length > 0) {
 
-				var entry = data.feed.entry[i].content['$t'];
+				var entry = data.feed.entry[i].content.$t;
 
 				money_raised += parseInt(entry.replace(/[^0-9.]/g, ""));
 			}
