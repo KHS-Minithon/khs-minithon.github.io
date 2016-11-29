@@ -287,10 +287,18 @@ section {
 	font-size: 60px;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	color: black;
+  	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
 }
 #text-carousel-intro-section .caption p {
 	letter-spacing: 2px;
-	font-size: 16px;
+	font-size: 22px;
+	color: black;
+  	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
 }
 /* End text carousel intro */
 /* ===== End intro ===== */
