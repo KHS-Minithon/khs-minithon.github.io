@@ -1327,10 +1327,17 @@ p.technology {
 }
 
 #event-logo {
-	height: 425px !important;
+	max-width: 60% !important;
+	height: auto !important;
     margin-top: -175px !important;
     margin-bottom: -20px !important;
 }
+
+@media screen and (max-device-width:1000px) {
+        img[id=event-logo] {
+            max-width: 80% !important;
+        }
+    }
 
 .event-date {
 	font-weight: bold;
