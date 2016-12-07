@@ -6,7 +6,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+	
 }
 
 /* Extra Small Devices, Phones */
@@ -276,6 +276,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+	/*HEADER*/
+	#event-logo {
+		max-width: 80% !important;
+		height: auto !important;
+    	margin-top: -100px !important;
+    	margin-bottom: -10px !important;
+	}
 
 	/* Team */
 	 #team-section .col-md-2 {
