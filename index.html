@@ -41,7 +41,23 @@
       ga('set', 'page', '/index.html');
       ga('send', 'pageview');
     </script>
+<script>
+function committeeEntertainment()
+{
+document.getElementById("committeeEntertainmentId").onclick = function() { committeeEntertainmentReset(); }
+document.getElementById("committeeEntertainmentText1").innerHTML = "Members";
+document.getElementById("committeeEntertainmentText1").setAttribute("style", "margin-top:5%;");
+document.getElementById("committeeEntertainmentText2").innerHTML = "Peoples";
+}
 
+function committeeEntertainmentReset()
+{
+document.getElementById("committeeEntertainmentId").onclick = function() { committeeEntertainment(); }
+document.getElementById("committeeEntertainmentText1").innerHTML = "Entertainment / Morale";
+document.getElementById("committeeEntertainmentText1").setAttribute("style", "margin-top:40%;");
+document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucker, Anna Wilson, and Erin Duffy";
+}
+</script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -537,26 +553,26 @@
               <h4 class="sub-header wow fadeInUp" data-wow-delay="0.4s">Online Registration</h4>
 <h6 class="sub-header wow fadeInUp" data-wow-delay="0.4s"><i>If you are paying your $10 registration fee with cash or check you must do so before registering online.</i></h6>
                
-              <div class="row bs-wizard" style="border-bottom:0;">
+              <div class="row bs-wizard wow fadeInUp" data-wow-delay="0.6s" style="border-bottom:0;">
 
-                <div class="col-xs-2 bs-wizard-step complete wow fadeInUp" data-wow-delay="0.6s">
+                <div class="col-xs-2 bs-wizard-step complete">
                   <div class="text-center bs-wizard-stepnum">Step 1</div>
                   <div class="progress-step"><div class="progress-bar"></div></div>
                   <a class="bs-wizard-dot"></a>
                   <div class="bs-wizard-info text-center">Go to <a href="http://fourdiamonds.donordrive.com/index.cfm?fuseaction=register.start&eventID=1490" target="_blank">Registration Page</a></div>
                 </div>
 
-                <div class="col-xs-2 bs-wizard-step complete wow fadeInUp" data-wow-delay="0.8s">
+                <div class="col-xs-2 bs-wizard-step complete">
                   <div class="text-center bs-wizard-stepnum">Step 2</div>
                   <div class="progress-step"><div class="progress-bar"></div></div>
                   <a class="bs-wizard-dot"></a>
                   <div class="bs-wizard-info text-center"> Select the dancer participant type that has your grade <br><br>
-                    Click "search" and join the team called "KHS <i>Your Grade</i> | Mini-THON 2016"
+                    Click "search" and join the team called "KHS <i>Your Grade</i> | Mini-THON 2017"
 
                   </div>
                 </div>
 
-                <div class="col-xs-2 bs-wizard-step complete wow fadeInUp" data-wow-delay="1.0s">
+                <div class="col-xs-2 bs-wizard-step complete">
                   <div class="text-center bs-wizard-stepnum">Step 3</div>
                   <div class="progress-step"><div class="progress-bar"></div></div>
                   <a class="bs-wizard-dot"></a>
@@ -565,7 +581,7 @@
                   </div>
                 </div>
 
-                <div class="col-xs-2 bs-wizard-step complete wow fadeInUp" data-wow-delay="1.2s">
+                <div class="col-xs-2 bs-wizard-step complete">
                   <div class="text-center bs-wizard-stepnum">Step 4</div>
                   <div class="progress-step"><div class="progress-bar"></div></div>
                   <a class="bs-wizard-dot"></a>
@@ -576,7 +592,7 @@
                   </div>
                 </div>
 
-                <div class="col-xs-2 bs-wizard-step complete wow fadeInUp" data-wow-delay="1.4s">
+                <div class="col-xs-2 bs-wizard-step complete">
                   <div class="text-center bs-wizard-stepnum">Step 5</div>
                   <div class="progress-step"><div class="progress-bar"></div></div>
                   <a class="bs-wizard-dot"></a>
@@ -588,7 +604,7 @@
                   </div>
                 </div>
 
-                <div class="col-xs-2 bs-wizard-step complete wow fadeInUp" data-wow-delay="1.6s">
+                <div class="col-xs-2 bs-wizard-step complete">
                   <div class="text-center bs-wizard-stepnum">Step 6</div>
                   <div class="progress-step"><div class="progress-bar"></div></div>
                   <a class="bs-wizard-dot"></a>
@@ -598,15 +614,11 @@
                 </div>
 
               </div>
-            </div>
-            
-            <div id="rootwizard">
-              <h4 class="sub-sub-header wow fadeInUp" data-wow-delay="0.4s">KHS Registration</h4>
               
-              <div class="row bs-wizard" style="border-bottom:0;">
+              <div class="row bs-wizard wow fadeInUp" data-wow-delay="0.6s" style="border-bottom:0;">
                 
-                  <div class="col-xs-4 bs-wizard-step complete wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="text-center bs-wizard-stepnum">Step 1</div>
+                  <div class="col-xs-4 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum">Step 7</div>
                     <div class="progress-step"><div class="progress-bar"></div></div>
                     <a class="bs-wizard-dot"></a>
                     <div class="bs-wizard-info text-center">
@@ -615,8 +627,8 @@
                     </div>
                   </div>
                   
-                  <div class="col-xs-4 bs-wizard-step complete wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="text-center bs-wizard-stepnum">Step 2</div>
+                  <div class="col-xs-4 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum">Step 8</div>
                     <div class="progress-step"><div class="progress-bar"></div></div>
                     <a class="bs-wizard-dot"></a>
                     <div class="bs-wizard-info text-center">
@@ -624,8 +636,8 @@
                     </div>
                   </div>
                   
-                  <div class="col-xs-4 bs-wizard-step complete wow fadeInUp" data-wow-delay="1.0s">
-                    <div class="text-center bs-wizard-stepnum">Step 3</div>
+                  <div class="col-xs-4 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum">Step 9</div>
                     <div class="progress-step"><div class="progress-bar"></div></div>
                     <a class="bs-wizard-dot"></a>
                     <div class="bs-wizard-info text-center">
@@ -636,74 +648,78 @@
             </div>
            </div>
             
-            <div id="mobile-signup"  class="row">
+            <div id="mobile-signup"  class="row wow fadeInUp" data-wow-delay="0.4s">
               
               <div class="col-md-2 center-block" style="float: none">
                 <ul class="list-group text-center">
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="0.4s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 1</h4>
                     <p class="list-group-item-text">
-                      Go to <a href="https://fourdiamonds.donordrive.com/index.cfm?fuseaction=register.start&eventID=1179" target="_blank">Registration Page</a>
+                      Go to <a href="http://fourdiamonds.donordrive.com/index.cfm?fuseaction=register.start&eventID=1490" target="_blank">Registration Page</a>
                     </p>
                   </li>
 
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="0.6s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 2</h4>
                     <p class="list-group-item-text">
-                      Select Participant
+                      Select the dancer participant type that has your grade <br><br>
+                    Click "search" and join the team called "KHS <i>Your Grade</i> | Mini-THON 2017"
                     </p>
                   </li>
 
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="0.8s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 3</h4>
                     <p class="list-group-item-text">
-                      Type in Fundraising Goal <br><br>
-                       Select Grade <br><br>
-                       Select T-Shirt Size
+                      Fill out the KHS registration information
                     </p>
                   </li>
 
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="1.0s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 4</h4>
                     <p class="list-group-item-text">
-                      Fill in all required information
+                      Log in or create a Donor Drive account <br><br>
+
+                   If creating an account enter the necessary profile information
                     </p>
                   </li>
 
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="1.2s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 5</h4>
                     <p class="list-group-item-text">
-                      Choose whether to make a donation now or later
+                      Choose whether to make a donation now or later <br><br>
+                   Pay your $10 registration fee <br>
+                   if you have not already <br>
+                   paid with cash or check
                     </p>
                   </li>
 
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="1.4s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 6</h4>
                     <p class="list-group-item-text">
                       Complete Online Registration
                     </p>
                   </li>
                   
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="1.6s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 7</h4>
                     <p class="list-group-item-text">
-                      Download and print the <a href="/downloads/dancer-packet.pdf" download>Dancer Packet</a>
+                      Download and print <br>
+                      the <a href="/downloads/forms.pdf" download>Dancer Forms</a>
                     </p>
                   </li>
                   
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="1.8s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 8</h4>
                     <p class="list-group-item-text">
-                      Complete the Dancer Packet
+                      Complete the Dancer Forms
                     </p>
                   </li>
                   
-                  <li class="list-group-item wow fadeInUp" data-wow-delay="2.0s">
+                  <li class="list-group-item">
                     <h4 class="list-group-item-heading">Step 9</h4>
                     <p class="list-group-item-text">
-                      Turn in Dancer Packet and
-                      $20 registration fee
-                      to Ms. Teixeira
+                      Turn in Dancer Forms to <br>
+                      Ms. Teixeira in the library
                     </p>
                   </li>
                 </ul>
@@ -746,13 +762,15 @@
                           </div>
                         </div>
 
+
+
                         <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.2s">
-                          <div class="portfolio_single_content">
-                            <a rel="gallery-2" onclick="myFunction('Name)" class="swipebox" id="commitees">
+                          <div class="portfolio_single_content" >
+                            <a rel="gallery-2" class="swipebox">
                               <img src="img/team/entertainment.jpg" alt="Entertainment / Morale comittee">
-                              <div>
-                                  <p>Entertainment / Morale</p>
-                                  <span>Jackie Tucker, Anna Wilson, and Erin Duffy</span>
+                              <div id="committeeEntertainmentId" onclick="committeeEntertainment()" href="#">
+                                  <p id="committeeEntertainmentText1">Entertainment / Morale</p>
+                        <span id="committeeEntertainmentText2">Jackie Tucker, Anna Wilson, and Erin Duffy</span>
                               </div>
                             </a>
                           </div>
