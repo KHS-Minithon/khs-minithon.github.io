@@ -20,7 +20,7 @@ $(document).ready(function() {
   //      	
     //       
    // );
-		var money_raised = 760;
+		var money_raised = 890;
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
 
@@ -31,18 +31,18 @@ $(document).ready(function() {
 		}
 
 		$("#money_raised_bar").attr("aria-valuenow", current_money);
-		$("#current_money").text("$" + money_raised);
+    $("#current_money").replaceWith(money_raised);
 
-	}).fail(function(jqxhr, textStatus, error ) {
+	})
+	//.fail(function(jqxhr, textStatus, error ) {
 
-		var status = textStatus + ", " + error;
-		console.error("Request Failed: " + status );
-
-	});
+//		var status = textStatus + ", " + error;
+//		console.error("Request Failed: " + status );
+//
+//	});
 
   // Image Gallery Initiation and Settings
   // **VIDEO POP-UP ONLY WORK IN A SERVER**
 	$('.swipebox').swipebox();
 	$('.swipebox-video').swipebox();
 
-});
