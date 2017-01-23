@@ -1127,7 +1127,7 @@ p.subtitle {
 
 /* ===== Begin OWL carousel ===== */
 .owl-carousel {
-	cursor: e-resize;
+	cursor: pointer;
 }
 .owl-theme .owl-controls {
 	margin-top: 30px;
@@ -1280,12 +1280,17 @@ p.subtitle {
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
 .scrolltotop .fa {
 	padding-left: 4px;
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+/* Previous Updates Button */
+.blog .prvs-pd-button {
+	background-color: blue;
 }
 
 /* Members Section */
