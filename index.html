@@ -34,6 +34,7 @@
       <!-- build:js -->
       <script src="js/countdown.js"></script>
       <script src="js/jquery/jquery-2.1.4.min.js"></script>
+      <script src="js/jquery/jquery.cookie.js"></script>
       <script src="js/bootstrap/bootstrap.min.js"></script>
       <script src="js/bootstrap/jquery.bootstrap.wizard.min.js"></script>
       <script src="js/owl-carousel/owl.carousel.min.js"></script>
@@ -48,6 +49,8 @@
       <script src="js/swipebox/jquery.swipebox.min.js"></script>
       <script src="js/theme.js"></script>
       <script src="js/app.js"></script>
+      <script src="js/committees.js"></script>
+      <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
       <!-- endbuild -->
 
     <!-- Google Analytics -->
@@ -61,23 +64,7 @@
       ga('set', 'page', '/index.html');
       ga('send', 'pageview');
     </script>
-<script>
-function committeeEntertainment()
-{
-document.getElementById("committeeEntertainmentId").onclick = function() { committeeEntertainmentReset(); }
-document.getElementById("committeeEntertainmentText1").innerHTML = "Members";
-document.getElementById("committeeEntertainmentText1").setAttribute("style", "margin-top:5%;");
-document.getElementById("committeeEntertainmentText2").innerHTML = "Peoples";
-}
 
-function committeeEntertainmentReset()
-{
-document.getElementById("committeeEntertainmentId").onclick = function() { committeeEntertainment(); }
-document.getElementById("committeeEntertainmentText1").innerHTML = "Entertainment / Morale";
-document.getElementById("committeeEntertainmentText1").setAttribute("style", "margin-top:40%;");
-document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucker, Anna Wilson, and Erin Duffy";
-}
-</script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -103,6 +90,25 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
     <!-- Display loading image while page loads -->
     <div class="page-loader"></div>
     <div class="body">
+<!--Popup-->
+<script>
+    $(document).ready(function() {
+
+      // Initialize the plugin
+      $('#my_popup').popup();
+
+    });
+  </script>
+        <!-- Add content to the popup -->
+  <div id="my_popup">
+
+    ...popup content...
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+<!--End Popup-->
       <!--========== BEGIN HEADER ==========-->
       <header id="header" class="header-main">
 
@@ -129,10 +135,10 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
                   <li><a class="page-scroll" href="#about">About</a></li>
                   <li><a class="page-scroll" href="#services">Services</a></li>
                   <li><a class="page-scroll" href="#portfolio">Impact</a></li>
-                  <!--<li><a class="page-scroll" href="#events">Events</a></li>-->
+                  <!--<li><a class="page-scroll" href="#pool">Superbowl Block Pool</a></li>-->
                   <li><a class="page-scroll" href="#signup">Sign Up</a></li>
                   <li><a class="page-scroll" href="#team">Team</a></li>
-                  <li><a class="page-scroll" href="#partners">Partners</a></li>
+                  <!--<li><a class="page-scroll" href="#bts">Blog</a></li>-->
                   <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
                   <li><a class="page-scroll" href="#social">Social</a></li>
               </ul>
@@ -154,7 +160,8 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
           <div class="caption text-center text-white" data-stellar-ratio="0.7">
             <div]>
               <div class="item">
-                <div><img id="event-logo" src="img/hero_header.png"></img></div>
+                <div><img id="event-logo" src="img/hero_header_BANNER.png"></img></div>
+                <br>
                 <p id="event-date"><strong>Join us on February 24th, 2017.</strong></p>
                 <p id="event-slogan"><strong>For The Fight. For The Cure. For The Kids.</strong></p>
                 <p id="countdown"></p>
@@ -183,7 +190,8 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
           </div>
         </div>
         <!-- End page header-->
-
+  
+     
         <!-- Begin rotate box-1 -->
         <div class="rotate-box-1-wrapper">
           <div class="container">
@@ -205,7 +213,7 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
                     <span class="rotate-box-icon"><i class="fa fa-diamond"></i></span>
                     <div class="rotate-box-info">
                         <h4>What Do We Do?</h4>
-                        <p>The KHS Mini-THON raises money through fundraisers and our annual Mini-THON to benefit the Four Diamonds Research.</p>
+                        <p>The KHS Mini-THON raises money through fundraisers and our annual Mini-THON to benefit the Four Diamonds Organization.</p>
                     </div>
                   </span>
                 </a>
@@ -216,7 +224,7 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
                   <span class="rotate-box-icon"><i class="fa fa-heart"></i></span>
                   <div class="rotate-box-info">
                     <h4>Why We Do It?</h4>
-                    <p>We do it for the fight. For the cure. For The Kids living with cancer.</p>
+                    <p>We dance for the kids battling cancer day-in and day-out and their families. For the cure.</p>
                   </div>
                 </span>
               </div>
@@ -260,7 +268,7 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
                     <div class="progress-bar" id="money_raised_bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
                   </div>
                   <div class="progress-lebel" style="float: left;">
-                    <h6 class="text-right">Current - $<span id="current_money">0</span></h6>
+                    <h6 class="text-right">Current - $<span id="current_money">760</span></h6>
                   </div>
                 </div>
               </div>
@@ -518,33 +526,45 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
         </section>
         <!-- End portfolio -->
         
-        <!--
-        <section id="events-section" class="page bg-style1">
+        <!-- Begin Pool 
+        <section id="pool" class="page bg-style1">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <div class="events">
-                  
-                  <div class="page-header-wrapper">
-                    <div class="container">
-                      <div class="page-header text-center wow fadeInDown" data-wow-delay="0.2s">
-                        <h2>Events</h2>
-                        <div class="devider"></div>
-                        <p class="subtitle">Come together with the Kennett Square Community</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="wow fadeInUp center" data-wow-delay="0.4s">
-                    <span class="event-date">Feb 26 - </span> <span class="event-details">participate in <a href="https://www.facebook.com/events/924971434223058/" target="_blank">KHS's first annual Mini-THON</a> at <a href="https://goo.gl/Of0EKQ" target="_blank">Kennett High School</a>!</span>
-                  </div>
-
+                <div class="pool">
+                  <!-- Begin page header-->
+                  <!--
+        <div class="page-header-wrapper">
+          <div class="container">
+            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+              <h2>Superbowl Block Pool</h2>
+              <div class="devider"></div>
+              <p class="subtitle" style="font-size:16px;">Instructions Below!</p>
+            </div>
+          </div>
+        </div>
+        <!-- End page header-->
+          <!--
+            <center><img id="poolpic" src="img/pool.png" style="height:auto; width:70%; margin-top:-50px;"></img>
+           <br>
+           <br>
+            <h5 class="text-center">
+              <ul>
+                <li>Each Block Costs $20.00</li>
+                <br>
+                <li>You can pay by cash, check, or through Paypal.
+                  <p>Please make checks payable to KCSD Activities.</p></li>
+                <br>
+                <li>Once the grid is filled the numbers along the horizontal and vertical sections will be randomly filled.</li>
+              </ul>
+              </h5>
+              </center>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        -->
+          <!-- End Pool -->
         <section id="signup" class="page bg-style1">
 
           <!-- Begin page header-->
@@ -773,13 +793,13 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
 
                         <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.2s">
                           <div class="portfolio_single_content">
-                            <a rel="gallery-2" href="img/team/chairperson.jpg" class="swipebox">
-                              <img src="img/team/chairperson.jpg" alt="Chairperson">
+                            
+                              <img src="img/team/chairperson.png" alt="Chairperson">
                               <div>
                                 <p>Chairperson</p>
                                 <span>Austin Maxwell</span>
                               </div>
-                            </a>
+                            
                           </div>
                         </div>
 
@@ -787,25 +807,28 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
 
                         <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.2s">
                           <div class="portfolio_single_content" >
-                            <a rel="gallery-2" class="swipebox">
-                              <img src="img/team/entertainment.jpg" alt="Entertainment / Morale comittee">
-                              <div id="committeeEntertainmentId" onclick="committeeEntertainment()" href="#">
+                            
+                              <img src="img/team/entertainment.png" alt="Entertainment / Morale comittee">
+                              <div id="committeeEntertainmentId" onclick="committeeEntertainment()" href="#" style="cursor: pointer;">
                                   <p id="committeeEntertainmentText1">Entertainment / Morale</p>
                         <span id="committeeEntertainmentText2">Jackie Tucker, Anna Wilson, and Erin Duffy</span>
+                        <br>
+                        <br>
+                       <i><span id="committeeEntertainmentText3">(Click to view members!)</span></i>
                               </div>
-                            </a>
+                            
                           </div>
                         </div>
 
                         <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.2s">
                           <div class="portfolio_single_content">
-                            <a rel="gallery-2" href="img/team/finances.jpg" class="swipebox">
-                              <img src="img/team/finances.jpg" alt="Finance comittee khsminithon.finance@gmail.com">
+                            
+                              <img src="img/team/finances.png" alt="Finance comittee khsminithon.finance@gmail.com">
                               <div>
                                   <p>Finance</p>
                                   <span>Edwin Castenada and Davis Peircy</span>
                               </div>
-                            </a>
+                           
                           </div>
                         </div>
                         <!--
@@ -822,64 +845,79 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
                         </div>
                         -->
                         <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.4s">
-                          <div class="portfolio_single_content">
-                            <a rel="gallery-2" href="img/team/operations.jpg" class="swipebox">
-                              <img src="img/team/operations.jpg" alt="Operations comittee khsminithon.operations@gmail.com">
-                              <div>
-                                  <p>Operations</p>
-                                  <span>Molly Adelman</span>
+                          <div class="portfolio_single_content" >
+                            
+                              <img src="img/team/Operations.png" alt="Operations committee">
+                              <div id="committeeOperationsId" onclick="committeeOperations()" href="#" style="cursor: pointer;">
+                                  <p id="committeeOperationsText1">Operations</p>
+                        <span id="committeeOperationsText2">Molly Adelman</span>
+                        <br>
+                        <br>
+                       <i><span id="committeeOperationsText3">(Click to view members!)</span></i>
                               </div>
-                            </a>
+                            
                           </div>
                         </div>
 
                       <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio_single_content">
-                          <a rel="gallery-2" href="img/team/hospitality.jpg" class="swipebox">
-                            <img src="img/team/hospitality.jpg" alt="Hospitality comittee khsminithon.hospitality@gmail.com">
-                            <div>
-                                <p>Hospitality</p>
-                                <span>Ben Skross and Olivia Pagliaro</span>
-                            </div>
-                          </a>
-                        </div>
+                        <div class="portfolio_single_content" >
+                            
+                              <img src="img/team/Hospitality.png" alt="Hospitality committee">
+                              <div id="committeeHospitalityId" onclick="committeeHospitality()" href="#" style="cursor: pointer;">
+                                  <p id="committeeHospitalityText1">Hospitality</p>
+                        <span id="committeeHospitalityText2">Ben Skross and Olivia Pagliaro</span>
+                        <br>
+                        <br>
+                       <i><span id="committeeHospitalityText3">(Click to view members!)</span></i>
+                              </div>
+                            
+                          </div>
                       </div>
                       
                       <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio_single_content">
-                          <a rel="gallery-2" href="img/team/tech.jpg" class="swipebox">
-                            <img src="img/team/tech.jpg" alt="Social Media comittee khsminithon.tech@gmail.com">
-                            <div>
-                                <p>Technology</p>
-                                <span>Michael Bellino</span>
-                            </div>
-                          </a>
-                        </div>
+                        <div class="portfolio_single_content" >
+                            
+                              <img src="img/team/tech.png" alt="Technology committee">
+                              <div id="committeeTechnologyId" onclick="committeeTechnology()" href="#" style="cursor: pointer;">
+                                  <p id="committeeTechnologyText1">Technology</p>
+                        <span id="committeeTechnologyText2">Michael Bellino</span>
+                        <br>
+                        <br>
+                       <i><span id="committeeTechnologyText3">(Click to view members!)</span></i>
+                              </div>
+                            
+                          </div>
                       </div>
                       
                 
                       <div class="col-xs-12 col-sm-4 col-sm-offset-2 appsDevelopment wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio_single_content">
-                          <a rel="gallery-2" href="img/team/pr.jpg" class="swipebox">
-                            <img src="img/team/pr.jpg" alt="Social Media comittee">
-                            <div>
-                                <p>Public Relations</p>
-                                <span>Sami Castleton and Sam Weaver</span>
-                            </div>
-                          </a>
-                        </div>
+                        <div class="portfolio_single_content" >
+                            
+                              <img src="img/team/pr.png" alt="PR committee">
+                              <div id="committeePRId" onclick="committeePR()" href="#" style="cursor: pointer;">
+                                  <p id="committeePRText1">Public Relations</p>
+                        <span id="committeePRText2">Sami Castleton and Sam Weaver</span>
+                        <br>
+                        <br>
+                       <i><span id="committeePRText3">(Click to view members!)</span></i>
+                              </div>
+                            
+                          </div>
                       </div>
                     
                       <div class="col-xs-12 col-sm-4 appsDevelopment wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio_single_content">
-                          <a rel="gallery-2" href="img/team/events.jpg" class="swipebox">
-                            <img src="img/team/events.jpg" alt="Special events comittee">
-                            <div>
-                                <p>Special Events</p>
-                                <span>Gemma Erickson and Hannah Wissner</span>
-                            </div>
-                          </a>
-                        </div>
+                        <div class="portfolio_single_content" >
+                            
+                              <img src="img/team/events.png" alt="Events committee">
+                              <div id="committeeEventsId" onclick="committeeEvents()" href="#" style="cursor: pointer;">
+                                  <p id="committeeEventsText1">Special Events</p>
+                        <span id="committeeEventsText2">Gemma Erickson and Hannah Wissner</span>
+                        <br>
+                        <br>
+                       <i><span id="committeeEventsText3">(Click to view members!)</span></i>
+                              </div>
+                            
+                          </div>
                       </div>
 
                     
@@ -890,35 +928,42 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
           </div>
         </div>
       </section>
-
-      <!-- Begin partners -->
-      <section id="partners" class="page">
+  
+   <!-- Begin B.T.S. 
+      <section id="bts" class="page">
 
         <!-- Begin page header-->
+        <!--
         <div class="page-header-wrapper">
           <div class="container">
             <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-              <h2>Our Partners</h2>
+              <h2>Blog</h2>
               <div class="devider"></div>
               <p class="subtitle"></p>
             </div>
           </div>
         </div>
         <!-- End page header-->
-
-        <div class="container">
-          <div class="row row-centered" >
-            <div class="col-md-3 col-sm-6 col-centered wow fadeInUp" data-wow-delay="0.4s">
-              <img src="img/blue-penn-logo.gif" alt="img">
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-centered wow fadeInUp" data-wow-delay="0.4s" style="bottom: 25px; margin-top: 55px;">
-              <img src="img/blue-fd-logo.png" alt="img">
-            </div>
+        <!--
+      <div class="container" id="blog" style="margin-top:-50px;">
+        <div class="container" id="curr-upd"  >
+          <h4 class="text-left" id="ltst-upd">Jan. 16, 2017</h4>
+          <p> Words words words</p>
+        </div>
+        <br>
+        <br>
+        <div class="container" id="prvs-upd-div">
+        <button type="button" id="prvs-upd-button" style="font-size=16px;" data-toggle="collapse" data-target="#prvs-upd">Previous Updates</button>
+          <div id="prvs-upd" class="collapse">
+            <br>
+            <br>
+           <h4 class="text-left" id="ltst-upd">Jan. 12, 2017</h4>
+           <p> Words words words</p>  
           </div>
         </div>
+      </div>
       </section>
-      <!-- End partners -->
+      <!-- End ` -->
 
       <!---Begin Sponsor-->
       <section id="sponsors">
@@ -933,34 +978,21 @@ document.getElementById("committeeEntertainmentText2").innerHTML = "Jackie Tucke
                     </div>
                 </div>
                 <!-- End page header-->
-
+<center> 
                 <div class="container">
-                    <div id="owl-partners" class="owl-carousel">
-                        <h5>Giant of East Marlborough</h5>
-                        <h5>Giant of New Garden</h5>
-                        <h5>Acme of Avondale</h5>
-                        <h5>Sam’s Subs</h5>
-                        <h5>KBC</h5>
-                        <h5>Kennett Inn</h5>
-                        <h5>Nourished</h5>
-                        <h5>Giordano’s</h5>
-                        <h5>Dunkin’ Donuts of Hockessin and East Marlborough</h5>
-                        <h5>Starbucks of East Marlborough</h5>
-                        <h5>Wendy’s of East Marlborough</h5>
-                        <h5>Fox Pizza</h5>
-                        <h5>Pretzel Factory</h5>
-                        <h5>Houpette</h5>
-                        <h5>My Polished Salon</h5>
-                        <h5>Torellis</h5>
-                        <h5>Seasons Pizza</h5>
-                        <h5>The Perfect Impression</h5>
-                        <h5>The KEA</h5>
-                        <h5>The 76ers</h5>
-                        <h5>KCSD Schools</h5>
-                        <h5>KHS Marching Band</h5>
-                    </div>
+                   <div id="owl-partners" class="owl-carousel">
+                        <h5><--    The Perfect Impression</h5>
+                        <h5>Kaboburritos</h5>
+                        <h5>Walmart, Kennett Sq.</h5>
+                        <h5>Philter</h5>
+                        <h5>Starbucks, Kennett Sq.</h5>
+                        <h5>More</h5>
+                        <h5>To</h5>
+                        <h5>Come</h5>
+                        <h5>Soon!    --></h5>
+                     </div> 
                 </div>
-
+</center>
             </section>
 
       <!--End sponsors-->
