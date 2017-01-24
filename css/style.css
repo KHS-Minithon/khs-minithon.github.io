@@ -1124,6 +1124,48 @@ p.subtitle {
 }
 /* ===== End more-space ===== */
 
+/* Pool */
+#option {
+	color:#000 !important;
+}
+
+#paypal {
+	background-color:#fbfbfb;
+	border-color:rgb(0,60,207);
+	border-width: 8px;
+	border-style: solid;
+	width: 40%;
+	height: 190px;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color:#000;
+	margin-bottom:-50px;
+}
+#paypalform {
+	position:relative;
+	top:18px;
+	
+}
+
+#paypalheader {
+	position:relative;
+	top:15px;
+	color:rgb(0,60,207);
+	text-decoration: underline;
+}
+
+option {
+	color:#000 !important;
+}
+
+#payout {
+	border-width: 8px;
+	border-style: solid;
+	border-color: red;
+	width:35%;
+	padding:15px;
+	height:190px;
+}
+
 
 /* ===== Begin OWL carousel ===== */
 .owl-carousel {
