@@ -1130,15 +1130,19 @@ p.subtitle {
 }
 
 #paypal {
-	background-color:#fbfbfb;
+	background-color: #ededed;
 	border-color:rgb(0,60,207);
 	border-width: 8px;
 	border-style: solid;
-	width: 40%;
+	width:30%;
 	height: 190px;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	color:#000;
 	margin-bottom:-50px;
+	float: right;
+	margin-right:20%;
+	position:relative;
+	
 }
 #paypalform {
 	position:relative;
@@ -1158,12 +1162,16 @@ option {
 }
 
 #payout {
+	background-color: #ededed;
 	border-width: 8px;
 	border-style: solid;
 	border-color: red;
-	width:35%;
+	width:30%;
 	padding:15px;
 	height:190px;
+	margin-left:20%;
+	float: left;
+	position:relative;
 }
 
 
