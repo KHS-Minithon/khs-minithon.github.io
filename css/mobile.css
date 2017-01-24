@@ -285,7 +285,12 @@
     	margin-bottom: -10px !important;
 	}
 
-	/*Paypal*/
+	/*Paypal / Pool */
+	#poolpic {
+		min-width:100% !important;
+		height: auto ! important;
+	}
+
 	#paypal {
 		margin-right:1%;
 		width:48%;
