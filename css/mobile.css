@@ -285,6 +285,18 @@
     	margin-bottom: -10px !important;
 	}
 
+	/*Paypal*/
+	#paypal {
+		margin-right:2%;
+		width:48%;
+	}
+
+	#payout {
+		margin-left:2%;
+		width:45%;
+		height:auto;
+	}
+
 	/* Team */
 	 #team-section .col-md-2 {
         width: 100%;
