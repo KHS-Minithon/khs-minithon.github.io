@@ -125,6 +125,19 @@ section {
 	/* height: 98px; */
 }
 
+/* Front Buttons */
+#main-donate {
+	position: relative;
+	left:40%;
+	float:left;
+}
+#main-signup {
+	position: relative;
+	right:40%;
+	float:right;
+}
+
+
 
 /* ===== Begin text colors ===== */
 .text-main { color: #363940; } /* Theme main color */

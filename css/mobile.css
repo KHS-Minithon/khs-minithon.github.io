@@ -41,6 +41,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+
 	/* Text Carousel */
 	#text-carousel-intro-section .caption h1 {
 		font-size: 50px;
@@ -67,6 +68,17 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+/*Front Buttons*/
+#main-donate {
+	position: relative;
+	left:35%;
+
+}
+#main-signup {
+	position: relative;
+	right:35%;
+
+}
 
 	/* Team */
 	.team-item .team-triangle {
@@ -143,6 +155,18 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+
+/*Front Buttons*/
+#main-donate {
+	position: relative;
+	left:30%;
+
+}
+#main-signup {
+	position: relative;
+	right:30%;
+
+}
 
 	/* Navbar brand */
 	.navbar-brand, .navbar-brand:focus {
@@ -279,11 +303,24 @@
 
 	/*HEADER*/
 	#event-logo {
-		max-width: 80% !important;
+		max-width: 100% !important;
 		height: auto !important;
-    	margin-top: -100px !important;
+    	margin-top: -1000px !important;
     	margin-bottom: -10px !important;
 	}
+
+/*Front Buttons*/
+#main-donate {
+	position: relative;
+	left:20%;
+
+}
+#main-signup {
+	position: relative;
+	right:20%;
+
+}
+
 
 	/*Paypal / Pool */
 	#poolpic {
