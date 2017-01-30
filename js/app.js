@@ -20,7 +20,7 @@ $(document).ready(function() {
         	
            
     
-		var money_raised = 6905;
+		var money_raised = 7735;
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
 
