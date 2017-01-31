@@ -151,6 +151,9 @@
 		font-size: 36px;
 	}
 
+	#kms {
+		padding-bottom:20px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -296,6 +299,10 @@
     	display: none;
     }
 
+	#kms {
+		padding-bottom:20px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -359,6 +366,10 @@
     #rootwizard {
     	display: none;
     }
+
+	#kms {
+		padding-bottom:20px;
+	}
 
 }
 

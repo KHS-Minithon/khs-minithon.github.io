@@ -75,7 +75,7 @@ function committeePR()
         document.getElementById("committeePRId").onclick = function() { committeePRReset(); }
         document.getElementById("committeePRText1").innerHTML = "Members";
         document.getElementById("committeePRText1").setAttribute("style", "margin-top:5%;");
-        document.getElementById("committeePRText2").innerHTML = "This feature is a work in progress.";
+        document.getElementById("committeePRText2").innerHTML = "";
         document.getElementById("committeePRText3").innerHTML = "(Click to view committee heads!)";
 }
 
@@ -91,9 +91,11 @@ function committeePRReset()
 function committeeEvents()
 {
         document.getElementById("committeeEventsId").onclick = function() { committeeEventsReset(); }
+        document.getElementById("committeeEventsId").setAttribute("style", "padding-left:5%; padding-right:5%; cursor:pointer;")
         document.getElementById("committeeEventsText1").innerHTML = "Members";
         document.getElementById("committeeEventsText1").setAttribute("style", "margin-top:5%;");
-        document.getElementById("committeeEventsText2").innerHTML = "This feature is a work in progress.";
+        document.getElementById("committeeEventsText2").setAttribute("style", "width:80%; height:auto;");
+        document.getElementById("committeeEventsText2").innerHTML = "Ashton Alberts,  MJ Patterson,  Chloe Price,  Susy Casini,  Danielle Phillips,<br>Neil Erickson,  Madison Brown,<br>Jayna Bruno,  Tyler Bowdoin,  Claire Dawyot,<br>Emily Funkhouser,  Katie Wiley,  and<br>Kaitlyn Devonshire.";
         document.getElementById("committeeEventsText3").innerHTML = "(Click to view committee heads!)";
 }
 
