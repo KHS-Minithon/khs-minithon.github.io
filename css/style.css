@@ -1172,6 +1172,12 @@ p.subtitle {
 	text-decoration: underline;
 }
 
+#paypalformform {
+	position:relative;
+	left: 10%;
+
+}
+
 option {
 	color:#000 !important;
 }

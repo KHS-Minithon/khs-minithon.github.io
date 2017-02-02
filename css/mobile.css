@@ -43,11 +43,15 @@
 
 #paypal {
 	height:225px;
-	
+}
+#paypalformform {
+	position:relative;
+	left: 5%;
+
 }
 #payout {
 	height:225px;
-
+}
 	/* Text Carousel */
 	#text-carousel-intro-section .caption h1 {
 		font-size: 50px;
@@ -80,7 +84,13 @@
 }
 #payout {
 	height:250px;
-	
+}
+
+#paypalformform {
+	position:relative;
+	left: -2%;
+
+}
 
 /*Front Buttons*/
 #main-donate {
@@ -181,6 +191,7 @@
 	height:250px;
 	
 }
+
 
 /*Front Buttons*/
 #main-donate {
@@ -338,6 +349,11 @@
 #payout {
 	height:250px;
 	
+}
+#paypalformform {
+	position:relative;
+	left: 2%;
+
 }
 
 	/*HEADER*/
