@@ -157,8 +157,8 @@ section {
 	transition: all 0.2s ease-in-out;
 }
 .navbar .container {
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 
@@ -1190,7 +1190,7 @@ option {
 	width:30%;
 	padding:15px;
 	height:200px;
-	margin-left:20%;
+	margin-left:35%;
 	float: left;
 	position:relative;
 }
