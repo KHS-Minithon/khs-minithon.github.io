@@ -23,6 +23,7 @@ $(document).ready(function() {
 		var money_raised = 12832;
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
+		var current_moneyrounded = Math.floor(current_money);
 
 		if(current_money > 100) {
 			$("#money_raised_bar").css({"width": 100 + "%" });
@@ -32,6 +33,7 @@ $(document).ready(function() {
 
 		$("#money_raised_bar").attr("aria-valuenow", current_money);
     $("#current_money").replaceWith(money_raised);
+		$("#percentagetext").replaceWith(current_moneyrounded);
 
 	})
 	//.fail(function(jqxhr, textStatus, error ) {

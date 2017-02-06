@@ -446,7 +446,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 .progress {
 	overflow: visible;
 	height: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
