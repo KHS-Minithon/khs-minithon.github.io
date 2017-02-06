@@ -1189,7 +1189,7 @@ option {
 	border-color: red;
 	width:30%;
 	padding:15px;
-	height:200px;
+	height:auto;
 	margin-left:35%;
 	float: left;
 	position:relative;
