@@ -261,8 +261,8 @@ section {
 .navbar-default.navbar-fixed-top.navbar-shrink .container {
 }
 .navbar-fixed-top.navbar-shrink .container {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+	padding-top: -5px !important;
+	padding-bottom: 5px !important;
 }
 .navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
 	padding-top: 24px;
