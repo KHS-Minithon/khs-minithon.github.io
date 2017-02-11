@@ -57,7 +57,7 @@ function committeeTechnology()
         document.getElementById("committeeTechnologyId").onclick = function() { committeeTechnologyReset(); }
         document.getElementById("committeeTechnologyText1").innerHTML = "Members";
         document.getElementById("committeeTechnologyText1").setAttribute("style", "margin-top:5%;");
-        document.getElementById("committeeTechnologyText2").innerHTML = "This feature is a work in progress.";
+        document.getElementById("committeeTechnologyText2").innerHTML = "Tamblyn Mitchell, Will Michaels, MJ<br>Patterson, Meredith Mitchell, Melissa Houck";
         document.getElementById("committeeTechnologyText3").innerHTML = "(Click to view committee heads!)";
 }
 
