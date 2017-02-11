@@ -20,7 +20,7 @@ $(document).ready(function() {
         	
            
     
-		var money_raised = 12832;
+		var money_raised = 15458;
 		var goal = 65000;
 		var current_money = (money_raised / goal) * 100;
 		var current_moneyrounded = Math.floor(current_money);
