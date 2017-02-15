@@ -78,6 +78,17 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+#school {
+	position:relative;
+	left:0px;
+}
+#elem {
+	width:100%;
+}
+#kms {
+	width:100%;
+
+}
 #paypal {
 	height:250px;
 	
@@ -182,6 +193,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+
+
 
 #paypal {
 	height:250px;

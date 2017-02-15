@@ -1486,3 +1486,20 @@ div.up {
 a:hover {
 	cursor: pointer;
 }
+
+.elemsch {
+	margin-top:7.5px;
+	margin-bottom:7.5px;
+}
+
+#elem {
+	width:57%;
+}
+#kms {
+	width:43%;
+
+}
+#school {
+	position:relative;
+	left:4%;
+}
