@@ -1204,8 +1204,11 @@ option {
 
 
 /* ===== Begin OWL carousel ===== */
+.owl-carousel:active {
+	cursor: ew-resize;
+}
 .owl-carousel {
-	cursor: pointer;
+	cursor: col-resize;
 }
 .owl-theme .owl-controls {
 	margin-top: 30px;

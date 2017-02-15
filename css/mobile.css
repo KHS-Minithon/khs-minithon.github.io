@@ -237,7 +237,7 @@
 		border-width: 2px;
 	}
 	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-		max-height: 440px;
+		max-height: 400px;
 	}
 	.navbar-inverse .navbar-collapse {
 		background-color: #111;
@@ -360,7 +360,7 @@
 	#event-logo {
 		max-width: 100% !important;
 		height: auto !important;
-    	margin-top: -1000px !important;
+    	margin-top: -30% !important;
     	margin-bottom: -10px !important;
 	}
 
