@@ -1503,3 +1503,15 @@ a:hover {
 	position:relative;
 	left:4%;
 }
+
+#carstyle:hover {
+	color:deeppink !important;
+}
+#carstyle {
+	color:hotpink !important;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
