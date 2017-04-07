@@ -965,6 +965,9 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 #moneyraised {
 	color: green;
 }
+#about {
+	padding-bottom:25px !important;
+}
 
 /* ===== Begin social ===== */
 #social {
